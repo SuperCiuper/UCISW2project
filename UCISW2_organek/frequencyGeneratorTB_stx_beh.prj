@@ -1,0 +1,2 @@
+vhdl isim_temp "frequencyGenerator.vhd"
+vhdl isim_temp "frequencyGeneratorTB.vhd"

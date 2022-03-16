@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/superciuper/Documents/UCISW2/UCISW2_organek/frequencyGeneratorTB_isim_beh.exe" -prj "/home/superciuper/Documents/UCISW2/UCISW2_organek/frequencyGeneratorTB_beh.prj" "work.frequencyGeneratorTB" 

@@ -1,0 +1,81 @@
+# soldered 50MHz Clock.
+NET "Clk" LOC = "C9" | IOSTANDARD = LVTTL;
+NET "Clk" PERIOD = 20.0ns HIGH 50%;
+
+# Ignore cross-clock domain data paths in timing analysis
+#NET "Clk50"  TNM = "TNM_Clk50";
+#NET "ClkSys" TNM = "TNM_ClkSys";
+#TIMESPEC "TS_12" = FROM "TNM_ClkSys" TO "TNM_Clk50"  TIG;
+#TIMESPEC "TS_13" = FROM "TNM_Clk50"  TO "TNM_ClkSys" TIG;
+
+#
+# Push-buttons (Press = Hi)
+#
+NET "Note<0>" LOC = "V4"  | IOSTANDARD = LVTTL | PULLDOWN;
+NET "Note<1>" LOC = "H13" | IOSTANDARD = LVTTL | PULLDOWN;
+NET "Note<2>" LOC = "K17" | IOSTANDARD = LVTTL | PULLDOWN;
+NET "Note<3>" LOC = "D18" | IOSTANDARD = LVTTL | PULLDOWN;
+
+#
+# Slide switches (Up = Hi)
+#
+#NET "SW<0>" LOC = "L13" | IOSTANDARD = LVTTL | PULLUP;
+#NET "SW<1>" LOC = "L14" | IOSTANDARD = LVTTL | PULLUP;
+#NET "SW<2>" LOC = "H18" | IOSTANDARD = LVTTL | PULLUP;
+#NET "SW<3>" LOC = "N17" | IOSTANDARD = LVTTL | PULLUP;
+
+#
+# Simple LEDs (Hi = On)
+#
+#NET "led<0>" LOC = "F12" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 4;
+#NET "led<1>" LOC = "E12" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 4;
+#NET "led<2>" LOC = "E11" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 4;
+#NET "led<3>" LOC = "F11" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 4;
+#NET "led<4>" LOC = "C11" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 4;
+#NET "led<5>" LOC = "D11" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 4;
+#NET "led<6>" LOC = "E9"  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 4;
+#NET "led<7>" LOC = "F9"  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 4;
+
+#
+# PS/2 port
+#
+#NET "PS2_Data" LOC = "G13" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8;
+#NET "PS2_Clk"  LOC = "G14" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8;
+
+#
+# VGA
+#
+#NET "VGA_R"  LOC = "H14" | IOSTANDARD = LVTTL | SLEW = FAST | DRIVE = 8;
+#NET "VGA_G"  LOC = "H15" | IOSTANDARD = LVTTL | SLEW = FAST | DRIVE = 8;
+#NET "VGA_B"  LOC = "G15" | IOSTANDARD = LVTTL | SLEW = FAST | DRIVE = 8;
+#NET "VGA_HS" LOC = "F15" | IOSTANDARD = LVTTL | SLEW = FAST | DRIVE = 8;
+#NET "VGA_VS" LOC = "F14" | IOSTANDARD = LVTTL | SLEW = FAST | DRIVE = 8;
+
+# RS-232 Serial Port: DCE
+#NET "RS232_RXD" LOC = "R7" | IOSTANDARD = LVTTL ;
+#NET "RS232_TXD" LOC = "M14" | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = SLOW ;
+# RS-232 Serial Port: DTE
+#NET "RS232_RXD" LOC = "U8" | IOSTANDARD = LVTTL ;
+#NET "RS232_TXD" LOC = "M13" | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = SLOW ;
+
+# ==== Common SPI signals ===================
+NET "SPI_MISO" LOC = "N10" | IOSTANDARD = LVCMOS33 ;
+NET "SPI_MOSI" LOC = "T4" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 6 ;
+NET "SPI_SCK" LOC = "U16" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 6 ;
+
+# ==== Other SPI devices ====================
+NET "SF_CE0" LOC = "D16" | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW ;
+NET "SPI_SS_B" LOC = "U3" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 6 ;
+NET "FPGA_INIT_B" LOC = "T3" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 4 ;
+
+# ==== Digital-to-Analog Converter (DAC) ====
+# some connections shared with SPI Flash, DAC, ADC, and AMP
+NET "DAC_CLR" LOC = "P8" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8 ;
+NET "DAC_CS" LOC = "N8" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8 ;
+
+# ==== Analog-to-Digital Converter (ADC) ====
+# some connections shared with SPI Flash, DAC, ADC, and AMP
+NET "AD_CONV" LOC = "P11" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 6 ;
+
+# ==== Programmable Gain Amplifier (AMP) ====
+NET "AMP_CS" LOC = "N7" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 6 ;

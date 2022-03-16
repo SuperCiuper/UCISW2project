@@ -1,0 +1,30 @@
+Command line:
+   frequencyGeneratorTB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  44121
+
+Wed Mar 16 11:26:53 2022
+
+
+ Elaboration Time: 0.01 sec
+
+ Current Memory Usage: 184.447 Meg
+
+ Total Signals          : 15
+ Total Nets             : 43
+ Total Signal Drivers   : 9
+ Total Blocks           : 6
+ Total Primitive Blocks : 5
+ Total Processes        : 6
+ Total Traceable Variables  : 16
+ Total Scalar Nets and Variables : 545
+Total Line Count : 21
+Total Line Count : 21
+
+ Total Simulation Time: 1.62 sec
+
+ Current Memory Usage: 259.949 Meg
+
+Wed Mar 16 11:29:50 2022
+

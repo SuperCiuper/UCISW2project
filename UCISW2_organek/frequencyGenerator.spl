@@ -1,0 +1,9 @@
+[Inputs]
+Clk
+=Note[3:0]=
+[Outputs]
+Start
+=Cmd[3:0]=
+=Addr[3:0]=
+=DATA[11:0]=
+[BiDir]
