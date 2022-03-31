@@ -564,6 +564,6 @@ LAB17:    xsi_size_not_matching(12U, t17, 0);
 extern void work_a_3976734816_3212880686_init()
 {
 	static char *pe[] = {(void *)work_a_3976734816_3212880686_p_0,(void *)work_a_3976734816_3212880686_p_1,(void *)work_a_3976734816_3212880686_p_2,(void *)work_a_3976734816_3212880686_p_3};
-	xsi_register_didat("work_a_3976734816_3212880686", "isim/frequencyGeneratorTB_isim_beh.exe.sim/work/a_3976734816_3212880686.didat");
+	xsi_register_didat("work_a_3976734816_3212880686", "isim/Main_isim_beh.exe.sim/work/a_3976734816_3212880686.didat");
 	xsi_register_executes(pe);
 }

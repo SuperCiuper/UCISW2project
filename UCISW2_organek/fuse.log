@@ -1,24 +1,28 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/superciuper/Documents/UCISW2/UCISW2_organek/frequencyGeneratorTB_isim_beh.exe -prj /home/superciuper/Documents/UCISW2/UCISW2_organek/frequencyGeneratorTB_beh.prj work.frequencyGeneratorTB 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/superciuper/Documents/UCISW2project/UCISW2_organek/Main_isim_beh.exe -prj /home/superciuper/Documents/UCISW2project/UCISW2_organek/Main_beh.prj work.Main 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 6
 Turning on mult-threading, number of parallel sub-compilation jobs: 12 
 Determining compilation order of HDL files
-Parsing VHDL file "/home/superciuper/Documents/UCISW2/UCISW2_organek/frequencyGenerator.vhd" into library work
-Parsing VHDL file "/home/superciuper/Documents/UCISW2/UCISW2_organek/frequencyGeneratorTB.vhd" into library work
+Parsing VHDL file "/home/superciuper/Documents/UCISW2project/UCISW2_organek/frequencyGenerator.vhd" into library work
+Parsing VHDL file "/home/superciuper/Documents/UCISW2project/UCISW2_organek/Main.vhf" into library work
 Starting static elaboration
+WARNING:HDLCompiler:89 - "/home/superciuper/Documents/UCISW2project/UCISW2_organek/Main.vhf" Line 83: <dacwrite> remains a black-box since it has no binding entity.
 Completed static elaboration
-Fuse Memory Usage: 86376 KB
-Fuse CPU Usage: 3050 ms
+Fuse Memory Usage: 102100 KB
+Fuse CPU Usage: 520 ms
+WARNING:Simulator:648 - "/home/superciuper/Documents/UCISW2project/UCISW2_organek/Main.vhf" Line 83. Instance dacwrite is unbound
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
+Compiling package vcomponents
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
 Compiling architecture behavioral of entity frequencyGenerator [frequencygenerator_default]
-Compiling architecture behavior of entity frequencygeneratortb
+Compiling architecture behavioral of entity main
 Time Resolution for simulation is 1ps.
-Compiled 8 VHDL Units
-Built simulation executable /home/superciuper/Documents/UCISW2/UCISW2_organek/frequencyGeneratorTB_isim_beh.exe
-Fuse Memory Usage: 924352 KB
-Fuse CPU Usage: 3180 ms
-GCC CPU Usage: 10520 ms
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 9 VHDL Units
+Built simulation executable /home/superciuper/Documents/UCISW2project/UCISW2_organek/Main_isim_beh.exe
+Fuse Memory Usage: 941364 KB
+Fuse CPU Usage: 610 ms
+GCC CPU Usage: 1940 ms

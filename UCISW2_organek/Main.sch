@@ -6,19 +6,10 @@
         <trait edittrait="all:0" />
     </attr>
     <netlist>
-        <signal name="XLXN_8" />
-        <signal name="XLXN_11" />
-        <signal name="XLXN_12" />
-        <signal name="XLXN_13" />
-        <signal name="XLXN_14" />
-        <signal name="XLXN_20" />
-        <signal name="XLXN_27" />
         <signal name="XLXN_1" />
         <signal name="XLXN_2(3:0)" />
         <signal name="XLXN_3(3:0)" />
         <signal name="XLXN_4(11:0)" />
-        <signal name="XLXN_45" />
-        <signal name="Clk" />
         <signal name="Note(3:0)" />
         <signal name="SPI_MOSI" />
         <signal name="SPI_MISO" />
@@ -31,7 +22,7 @@
         <signal name="SF_CE0" />
         <signal name="FPGA_INIT_B" />
         <signal name="XLXN_40" />
-        <port polarity="Input" name="Clk" />
+        <signal name="Clk" />
         <port polarity="Input" name="Note(3:0)" />
         <port polarity="Output" name="SPI_MOSI" />
         <port polarity="Output" name="SPI_MISO" />
@@ -43,6 +34,7 @@
         <port polarity="Output" name="AD_CONV" />
         <port polarity="Output" name="SF_CE0" />
         <port polarity="Output" name="FPGA_INIT_B" />
+        <port polarity="Input" name="Clk" />
         <blockdef name="DACWrite">
             <timestamp>2022-3-16T10:37:55</timestamp>
             <line x2="0" y1="-544" y2="-544" x1="64" />
@@ -112,94 +104,97 @@
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
-        <instance x="1216" y="1232" name="XLXI_1" orien="R0">
+        <instance x="2144" y="1472" name="XLXI_1" orien="R0">
         </instance>
         <branch name="XLXN_1">
-            <wire x2="1056" y1="688" y2="688" x1="1040" />
-            <wire x2="1216" y1="688" y2="688" x1="1056" />
+            <wire x2="1984" y1="928" y2="928" x1="1968" />
+            <wire x2="2144" y1="928" y2="928" x1="1984" />
         </branch>
         <branch name="XLXN_2(3:0)">
-            <wire x2="1056" y1="752" y2="752" x1="1040" />
-            <wire x2="1216" y1="752" y2="752" x1="1056" />
+            <wire x2="1984" y1="992" y2="992" x1="1968" />
+            <wire x2="2144" y1="992" y2="992" x1="1984" />
         </branch>
         <branch name="XLXN_3(3:0)">
-            <wire x2="1056" y1="816" y2="816" x1="1040" />
-            <wire x2="1216" y1="816" y2="816" x1="1056" />
+            <wire x2="1984" y1="1056" y2="1056" x1="1968" />
+            <wire x2="2144" y1="1056" y2="1056" x1="1984" />
         </branch>
         <branch name="XLXN_4(11:0)">
-            <wire x2="1056" y1="880" y2="880" x1="1040" />
-            <wire x2="1216" y1="880" y2="880" x1="1056" />
+            <wire x2="1984" y1="1120" y2="1120" x1="1968" />
+            <wire x2="2144" y1="1120" y2="1120" x1="1984" />
         </branch>
-        <instance x="656" y="912" name="XLXI_2" orien="R0">
+        <instance x="1584" y="1152" name="XLXI_2" orien="R0">
         </instance>
-        <branch name="Clk">
-            <wire x2="528" y1="688" y2="688" x1="480" />
-            <wire x2="528" y1="688" y2="1392" x1="528" />
-            <wire x2="1136" y1="1392" y2="1392" x1="528" />
-            <wire x2="1216" y1="1392" y2="1392" x1="1136" />
-            <wire x2="656" y1="688" y2="688" x1="528" />
-            <wire x2="1216" y1="1328" y2="1328" x1="1136" />
-            <wire x2="1136" y1="1328" y2="1392" x1="1136" />
-        </branch>
         <branch name="Note(3:0)">
-            <wire x2="640" y1="880" y2="880" x1="480" />
-            <wire x2="656" y1="880" y2="880" x1="640" />
+            <wire x2="1568" y1="1120" y2="1120" x1="1408" />
+            <wire x2="1584" y1="1120" y2="1120" x1="1568" />
         </branch>
         <branch name="SPI_MOSI">
-            <wire x2="1680" y1="688" y2="688" x1="1664" />
-            <wire x2="1696" y1="688" y2="688" x1="1680" />
+            <wire x2="2608" y1="928" y2="928" x1="2592" />
+            <wire x2="2624" y1="928" y2="928" x1="2608" />
         </branch>
         <branch name="SPI_MISO">
-            <wire x2="1680" y1="752" y2="752" x1="1664" />
-            <wire x2="1696" y1="752" y2="752" x1="1680" />
+            <wire x2="2608" y1="992" y2="992" x1="2592" />
+            <wire x2="2624" y1="992" y2="992" x1="2608" />
         </branch>
         <branch name="SPI_SCK">
-            <wire x2="1680" y1="816" y2="816" x1="1664" />
-            <wire x2="1696" y1="816" y2="816" x1="1680" />
+            <wire x2="2608" y1="1056" y2="1056" x1="2592" />
+            <wire x2="2624" y1="1056" y2="1056" x1="2608" />
         </branch>
         <branch name="DAS_CS">
-            <wire x2="1680" y1="880" y2="880" x1="1664" />
-            <wire x2="1696" y1="880" y2="880" x1="1680" />
+            <wire x2="2608" y1="1120" y2="1120" x1="2592" />
+            <wire x2="2624" y1="1120" y2="1120" x1="2608" />
         </branch>
         <branch name="DAC_CLR">
-            <wire x2="1680" y1="944" y2="944" x1="1664" />
-            <wire x2="1696" y1="944" y2="944" x1="1680" />
+            <wire x2="2608" y1="1184" y2="1184" x1="2592" />
+            <wire x2="2624" y1="1184" y2="1184" x1="2608" />
         </branch>
         <branch name="SPI_SS_B">
-            <wire x2="1680" y1="1008" y2="1008" x1="1664" />
-            <wire x2="1696" y1="1008" y2="1008" x1="1680" />
+            <wire x2="2608" y1="1248" y2="1248" x1="2592" />
+            <wire x2="2624" y1="1248" y2="1248" x1="2608" />
         </branch>
         <branch name="AMP_CS">
-            <wire x2="1680" y1="1072" y2="1072" x1="1664" />
-            <wire x2="1696" y1="1072" y2="1072" x1="1680" />
+            <wire x2="2608" y1="1312" y2="1312" x1="2592" />
+            <wire x2="2624" y1="1312" y2="1312" x1="2608" />
         </branch>
         <branch name="AD_CONV">
-            <wire x2="1680" y1="1136" y2="1136" x1="1664" />
-            <wire x2="1696" y1="1136" y2="1136" x1="1680" />
+            <wire x2="2608" y1="1376" y2="1376" x1="2592" />
+            <wire x2="2624" y1="1376" y2="1376" x1="2608" />
         </branch>
         <branch name="SF_CE0">
-            <wire x2="1680" y1="1200" y2="1200" x1="1664" />
-            <wire x2="1696" y1="1200" y2="1200" x1="1680" />
+            <wire x2="2608" y1="1440" y2="1440" x1="2592" />
+            <wire x2="2624" y1="1440" y2="1440" x1="2608" />
         </branch>
         <branch name="FPGA_INIT_B">
-            <wire x2="1680" y1="1264" y2="1264" x1="1664" />
-            <wire x2="1696" y1="1264" y2="1264" x1="1680" />
+            <wire x2="2608" y1="1504" y2="1504" x1="2592" />
+            <wire x2="2624" y1="1504" y2="1504" x1="2608" />
         </branch>
         <branch name="XLXN_40">
-            <wire x2="1680" y1="1328" y2="1328" x1="1664" />
-            <wire x2="1696" y1="1328" y2="1328" x1="1680" />
+            <wire x2="2608" y1="1568" y2="1568" x1="2592" />
+            <wire x2="2624" y1="1568" y2="1568" x1="2608" />
         </branch>
-        <iomarker fontsize="28" x="480" y="688" name="Clk" orien="R180" />
-        <iomarker fontsize="28" x="480" y="880" name="Note(3:0)" orien="R180" />
-        <iomarker fontsize="28" x="1696" y="688" name="SPI_MOSI" orien="R0" />
-        <iomarker fontsize="28" x="1696" y="816" name="SPI_SCK" orien="R0" />
-        <iomarker fontsize="28" x="1696" y="880" name="DAS_CS" orien="R0" />
-        <iomarker fontsize="28" x="1696" y="944" name="DAC_CLR" orien="R0" />
-        <iomarker fontsize="28" x="1696" y="1008" name="SPI_SS_B" orien="R0" />
-        <iomarker fontsize="28" x="1696" y="1072" name="AMP_CS" orien="R0" />
-        <iomarker fontsize="28" x="1696" y="1136" name="AD_CONV" orien="R0" />
-        <iomarker fontsize="28" x="1696" y="1200" name="SF_CE0" orien="R0" />
-        <iomarker fontsize="28" x="1696" y="1264" name="FPGA_INIT_B" orien="R0" />
-        <iomarker fontsize="28" x="1696" y="752" name="SPI_MISO" orien="R0" />
+        <branch name="Clk">
+            <wire x2="1456" y1="928" y2="928" x1="1408" />
+            <wire x2="1456" y1="928" y2="1632" x1="1456" />
+            <wire x2="1712" y1="1632" y2="1632" x1="1456" />
+            <wire x2="2064" y1="1632" y2="1632" x1="1712" />
+            <wire x2="2096" y1="1632" y2="1632" x1="2064" />
+            <wire x2="2144" y1="1632" y2="1632" x1="2096" />
+            <wire x2="1584" y1="928" y2="928" x1="1456" />
+            <wire x2="2064" y1="1568" y2="1632" x1="2064" />
+            <wire x2="2096" y1="1568" y2="1568" x1="2064" />
+            <wire x2="2144" y1="1568" y2="1568" x1="2096" />
+        </branch>
+        <iomarker fontsize="28" x="1408" y="928" name="Clk" orien="R180" />
+        <iomarker fontsize="28" x="1408" y="1120" name="Note(3:0)" orien="R180" />
+        <iomarker fontsize="28" x="2624" y="928" name="SPI_MOSI" orien="R0" />
+        <iomarker fontsize="28" x="2624" y="1056" name="SPI_SCK" orien="R0" />
+        <iomarker fontsize="28" x="2624" y="1120" name="DAS_CS" orien="R0" />
+        <iomarker fontsize="28" x="2624" y="1184" name="DAC_CLR" orien="R0" />
+        <iomarker fontsize="28" x="2624" y="1248" name="SPI_SS_B" orien="R0" />
+        <iomarker fontsize="28" x="2624" y="1312" name="AMP_CS" orien="R0" />
+        <iomarker fontsize="28" x="2624" y="1376" name="AD_CONV" orien="R0" />
+        <iomarker fontsize="28" x="2624" y="1440" name="SF_CE0" orien="R0" />
+        <iomarker fontsize="28" x="2624" y="1504" name="FPGA_INIT_B" orien="R0" />
+        <iomarker fontsize="28" x="2624" y="992" name="SPI_MISO" orien="R0" />
     </sheet>
 </drawing>

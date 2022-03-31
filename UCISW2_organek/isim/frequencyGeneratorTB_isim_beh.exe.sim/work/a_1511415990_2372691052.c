@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/home/superciuper/Documents/UCISW2/UCISW2_organek/frequencyGeneratorTB.vhd";
+static const char *ng0 = "/home/superciuper/Documents/UCISW2project/UCISW2_organek/frequencyGeneratorTB.vhd";
 
 
 
@@ -104,7 +104,7 @@ static void work_a_1511415990_2372691052_p_1(char *t0)
 
 LAB0:    xsi_set_current_line(89, ng0);
 
-LAB3:    t1 = (t0 + 6240);
+LAB3:    t1 = (t0 + 6320);
     t3 = (t0 + 3800);
     t4 = (t3 + 56U);
     t5 = *((char **)t4);

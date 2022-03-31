@@ -44,7 +44,7 @@ architecture Behavioral of frequencyGenerator is
 	signal counterTicks : UNSIGNED (11 downto 0) := "000000000000"; -- counts ticks between new operations
 	signal counterSchodki : UNSIGNED (3 downto 0) := "0000"; -- counts schodki
 	
-	begin
+begin
 
 	Addr <= "1111";
 	Cmd <= "0011";
