@@ -48,19 +48,19 @@ begin
 		if(rising_edge(Clk) and DO_Rdy = '1') then
 			if (E0 = '0' and F0 = '0') then
 				case DO is
-					when "wartość klawisza" => Note <= "0001";
-					when "wartość klawisza" => Note <= "0010";
-					when "wartość klawisza" => Note <= "0011";
-					when "wartość klawisza" => Note <= "0100";
-					when "wartość klawisza" => Note <= "0101";
-					when "wartość klawisza" => Note <= "0110";
-					when "wartość klawisza" => Note <= "0111";
-					when "wartość klawisza" => Note <= "1000";
-					when "wartość klawisza" => Note <= "1001";
-					when "wartość klawisza" => Note <= "1010";
-					when "wartość klawisza" => Note <= "1011";
-					when "wartość klawisza" => Note <= "1100";
-					when "wartość klawisza" => Note <= "1101";
+					when X"15" => Note <= "0001"; -- Q
+					when X"1E" => Note <= "0010"; -- 2
+					when X"1D" => Note <= "0011"; -- W
+					when X"26" => Note <= "0100"; -- 3
+					when X"24" => Note <= "0101"; -- E
+					when X"25" => Note <= "0110"; -- 4
+					when X"2D" => Note <= "0111"; -- R
+					when X"2E" => Note <= "1000"; -- 5
+					when X"2C" => Note <= "1001"; -- T
+					when X"36" => Note <= "1010"; -- 6
+					when X"25" => Note <= "1011"; -- Y
+					when X"3D" => Note <= "1100"; -- 7
+					when X"3C" => Note <= "1101"; -- U
 					when others => Note <= "0000";
 				end case;
 			end if;

@@ -102,5 +102,6 @@ BEGIN
       wait;
    end process;
 
-	DO <= "wartości klawisza", "wartości klawisza" after 220ns, "wartości klawisza" after 440ns;
+	DO <= X"15", X"1E" after 220ns, X"1D" after 440ns, X"26" after 360ns, X"24" after 480ns, X"25" after 600ns, X"2D" after 720ns, X"2E" after 840ns, X"2C" after  960ns, X"36" after 1080ns, X"25" after 1200ns, X"3D" after 1320ns, X"3C" after 1440ns
+	;
 END;
