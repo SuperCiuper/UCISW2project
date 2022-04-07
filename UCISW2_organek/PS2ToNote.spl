@@ -1,0 +1,9 @@
+[Inputs]
+DO_Rdy
+E0
+F0
+Clk
+=DO[7:0]=
+[Outputs]
+=Note[3:0]=
+[BiDir]

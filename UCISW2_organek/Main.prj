@@ -1,0 +1,3 @@
+vhdl work "PS2ToNote.vhd"
+vhdl work "frequencyGenerator.vhd"
+vhdl work "Main.vhf"

@@ -1,0 +1,28 @@
+Command line:
+   PS2ToNoteTB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52403
+
+Thu Apr 07 17:37:08 2022
+
+
+ Elaboration Time: 0.015625 sec
+
+ Current Memory Usage: 5150.86 Meg
+
+ Total Signals          : 12
+ Total Nets             : 16
+ Total Signal Drivers   : 6
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 6
+ Total Traceable Variables  : 9
+ Total Scalar Nets and Variables : 377
+
+ Total Simulation Time: 0.015625 sec
+
+ Current Memory Usage: 4993.57 Meg
+
+Thu Apr 07 17:38:09 2022
+

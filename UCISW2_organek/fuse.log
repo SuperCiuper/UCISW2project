@@ -1,28 +1,18 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/superciuper/Documents/UCISW2project/UCISW2_organek/Main_isim_beh.exe -prj /home/superciuper/Documents/UCISW2project/UCISW2_organek/Main_beh.prj work.Main 
-ISim P.20131013 (signature 0xfbc00daa)
-Number of CPUs detected in this system: 6
-Turning on mult-threading, number of parallel sub-compilation jobs: 12 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/lab/Desktop/UCISW2project-main/UCISW2_organek/PS2ToNoteTB_isim_beh.exe -prj C:/Users/lab/Desktop/UCISW2project-main/UCISW2_organek/PS2ToNoteTB_beh.prj work.PS2ToNoteTB 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
 Determining compilation order of HDL files
-Parsing VHDL file "/home/superciuper/Documents/UCISW2project/UCISW2_organek/frequencyGenerator.vhd" into library work
-Parsing VHDL file "/home/superciuper/Documents/UCISW2project/UCISW2_organek/Main.vhf" into library work
+Parsing VHDL file "C:/Users/lab/Desktop/UCISW2project-main/UCISW2_organek/PS2ToNote.vhd" into library work
+Parsing VHDL file "C:/Users/lab/Desktop/UCISW2project-main/UCISW2_organek/PS2ToNoteTB.vhd" into library work
 Starting static elaboration
-WARNING:HDLCompiler:89 - "/home/superciuper/Documents/UCISW2project/UCISW2_organek/Main.vhf" Line 83: <dacwrite> remains a black-box since it has no binding entity.
 Completed static elaboration
-Fuse Memory Usage: 102100 KB
-Fuse CPU Usage: 520 ms
-WARNING:Simulator:648 - "/home/superciuper/Documents/UCISW2project/UCISW2_organek/Main.vhf" Line 83. Instance dacwrite is unbound
 Compiling package standard
 Compiling package std_logic_1164
-Compiling package numeric_std
-Compiling package vcomponents
-Compiling package std_logic_arith
-Compiling package std_logic_unsigned
-Compiling architecture behavioral of entity frequencyGenerator [frequencygenerator_default]
-Compiling architecture behavioral of entity main
+Compiling architecture behavioral of entity PS2ToNote [ps2tonote_default]
+Compiling architecture behavior of entity ps2tonotetb
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-Compiled 9 VHDL Units
-Built simulation executable /home/superciuper/Documents/UCISW2project/UCISW2_organek/Main_isim_beh.exe
-Fuse Memory Usage: 941364 KB
-Fuse CPU Usage: 610 ms
-GCC CPU Usage: 1940 ms
+Compiled 5 VHDL Units
+Built simulation executable C:/Users/lab/Desktop/UCISW2project-main/UCISW2_organek/PS2ToNoteTB_isim_beh.exe
+Fuse Memory Usage: 30152 KB
+Fuse CPU Usage: 327 ms

@@ -1,0 +1,2 @@
+vhdl work "PS2ToNote.vhd"
+vhdl work "PS2ToNoteTB.vhd"

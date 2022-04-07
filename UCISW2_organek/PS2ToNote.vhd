@@ -58,11 +58,13 @@ begin
 					when X"2E" => Note <= "1000"; -- 5
 					when X"2C" => Note <= "1001"; -- T
 					when X"36" => Note <= "1010"; -- 6
-					when X"25" => Note <= "1011"; -- Y
+					when X"35" => Note <= "1011"; -- Y
 					when X"3D" => Note <= "1100"; -- 7
 					when X"3C" => Note <= "1101"; -- U
 					when others => Note <= "0000";
 				end case;
+			elsif (E0 = '0' and F0 = '1') then
+				Note <= "0000";
 			end if;
 		end if; 
 		

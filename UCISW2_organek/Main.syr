@@ -1,0 +1,458 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: Main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Main.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Main"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : Main
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/lab/Desktop/UCISW2project-main/UCISW2_organek/frequencyGenerator.vhd" in Library work.
+Architecture behavioral of Entity frequencygenerator is up to date.
+Compiling vhdl file "C:/Users/lab/Desktop/UCISW2project-main/UCISW2_organek/PS2ToNote.vhd" in Library work.
+Architecture behavioral of Entity ps2tonote is up to date.
+Compiling vhdl file "C:/Users/lab/Desktop/UCISW2project-main/UCISW2_organek/Main.vhf" in Library work.
+Architecture behavioral of Entity main is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Main> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <frequencyGenerator> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <PS2ToNote> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Main> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2211 - "C:/Users/lab/Desktop/UCISW2project-main/UCISW2_organek/Main.vhf" line 109: Instantiating black box module <DACWrite>.
+WARNING:Xst:2211 - "C:/Users/lab/Desktop/UCISW2project-main/UCISW2_organek/Main.vhf" line 137: Instantiating black box module <PS2_Kbd>.
+Entity <Main> analyzed. Unit <Main> generated.
+
+Analyzing Entity <frequencyGenerator> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/lab/Desktop/UCISW2project-main/UCISW2_organek/frequencyGenerator.vhd" line 74: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <counterSchodki>
+Entity <frequencyGenerator> analyzed. Unit <frequencyGenerator> generated.
+
+Analyzing Entity <PS2ToNote> in library <work> (Architecture <behavioral>).
+Entity <PS2ToNote> analyzed. Unit <PS2ToNote> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <frequencyGenerator>.
+    Related source file is "C:/Users/lab/Desktop/UCISW2project-main/UCISW2_organek/frequencyGenerator.vhd".
+WARNING:Xst:646 - Signal <frequency<31:13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 16x32-bit ROM for signal <frequency>.
+    Found 1-bit register for signal <Start>.
+    Found 4-bit up counter for signal <counterSchodki>.
+    Found 13-bit comparator equal for signal <counterSchodki$cmp_eq0000> created at line 81.
+    Found 12-bit up counter for signal <counterTicks>.
+    Found 13-bit comparator equal for signal <Start$or0000>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   2 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <frequencyGenerator> synthesized.
+
+
+Synthesizing Unit <PS2ToNote>.
+    Related source file is "C:/Users/lab/Desktop/UCISW2project-main/UCISW2_organek/PS2ToNote.vhd".
+    Found 4-bit register for signal <Note>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <PS2ToNote> synthesized.
+
+
+Synthesizing Unit <Main>.
+    Related source file is "C:/Users/lab/Desktop/UCISW2project-main/UCISW2_organek/Main.vhf".
+WARNING:Xst:646 - Signal <XLXN_40> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <XLXI_1_Reset_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <SPI_MISO_DUMMY> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <Main> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x32-bit ROM                                         : 1
+# Counters                                             : 2
+ 12-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 2
+ 1-bit register                                        : 1
+ 4-bit register                                        : 1
+# Comparators                                          : 2
+ 13-bit comparator equal                               : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <DACWrite.ngc>.
+Reading core <PS2_Kbd.ngc>.
+Loading core <DACWrite> for timing and area information for instance <XLXI_1>.
+Loading core <PS2_Kbd> for timing and area information for instance <XLXI_3>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x32-bit ROM                                         : 1
+# Counters                                             : 2
+ 12-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 5
+ Flip-Flops                                            : 5
+# Comparators                                          : 2
+ 13-bit comparator equal                               : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Main> ...
+
+Optimizing unit <PS2ToNote> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Main, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 21
+ Flip-Flops                                            : 21
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Main.ngr
+Top Level Output File Name         : Main
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 13
+
+Cell Usage :
+# BELS                             : 178
+#      GND                         : 3
+#      INV                         : 10
+#      LUT1                        : 18
+#      LUT2                        : 18
+#      LUT2_L                      : 2
+#      LUT3                        : 35
+#      LUT3_D                      : 1
+#      LUT4                        : 37
+#      LUT4_D                      : 4
+#      LUT4_L                      : 3
+#      MUXCY                       : 24
+#      VCC                         : 3
+#      XORCY                       : 20
+# FlipFlops/Latches                : 113
+#      FD                          : 18
+#      FDE                         : 61
+#      FDR                         : 18
+#      FDRE                        : 13
+#      FDRSE                       : 2
+#      FDS                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 12
+#      IBUF                        : 2
+#      OBUF                        : 10
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       82  out of   4656     1%  
+ Number of Slice Flip Flops:            113  out of   9312     1%  
+ Number of 4 input LUTs:                128  out of   9312     1%  
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    232     5%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clk                                | BUFGP                  | 113   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 7.867ns (Maximum Frequency: 127.113MHz)
+   Minimum input arrival time before clock: 3.980ns
+   Maximum output required time after clock: 5.620ns
+   Maximum combinational path delay: 7.141ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 7.867ns (frequency: 127.113MHz)
+  Total number of paths / destination ports: 2125 / 202
+-------------------------------------------------------------------------
+Delay:               7.867ns (Levels of Logic = 9)
+  Source:            XLXI_4/Note_0 (FF)
+  Destination:       XLXI_2/counterSchodki_0 (FF)
+  Source Clock:      Clk rising
+  Destination Clock: Clk rising
+
+  Data Path: XLXI_4/Note_0 to XLXI_2/counterSchodki_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             11   0.591   1.108  XLXI_4/Note_0 (XLXI_4/Note_0)
+     LUT4:I0->O            1   0.704   0.455  XLXI_2/Mrom_frequency111 (XLXI_2/Mrom_frequency1)
+     LUT4:I2->O            1   0.704   0.000  XLXI_2/Mcompar_Start_or0000_lut<1> (XLXI_2/Mcompar_Start_or0000_lut<1>)
+     MUXCY:S->O            1   0.464   0.000  XLXI_2/Mcompar_Start_or0000_cy<1> (XLXI_2/Mcompar_Start_or0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/Mcompar_Start_or0000_cy<2> (XLXI_2/Mcompar_Start_or0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/Mcompar_Start_or0000_cy<3> (XLXI_2/Mcompar_Start_or0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/Mcompar_Start_or0000_cy<4> (XLXI_2/Mcompar_Start_or0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/Mcompar_Start_or0000_cy<5> (XLXI_2/Mcompar_Start_or0000_cy<5>)
+     MUXCY:CI->O          18   0.331   1.072  XLXI_2/Mcompar_Start_or0000_cy<6> (XLXI_2/Mcompar_Start_or0000_cy<6>)
+     LUT4:I3->O            4   0.704   0.587  XLXI_2/counterSchodki_and0000 (XLXI_2/counterSchodki_and0000)
+     FDRE:R                    0.911          XLXI_2/counterSchodki_0
+    ----------------------------------------
+    Total                      7.867ns (4.645ns logic, 3.222ns route)
+                                       (59.0% logic, 41.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              3.980ns (Levels of Logic = 4)
+  Source:            PS2_Data (PAD)
+  Destination:       XLXI_3/ByteRdy (FF)
+  Destination Clock: Clk rising
+
+  Data Path: PS2_Data to XLXI_3/ByteRdy
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.218   0.622  PS2_Data_IBUF (PS2_Data_IBUF)
+     begin scope: 'XLXI_3'
+     LUT2:I0->O            1   0.704   0.424  ByteRdy_and0000_SW0_SW0 (N6)
+     LUT4:I3->O            1   0.704   0.000  ByteRdy_and0000 (ByteRdy_and0000)
+     FDR:D                     0.308          ByteRdy
+    ----------------------------------------
+    Total                      3.980ns (2.934ns logic, 1.046ns route)
+                                       (73.7% logic, 26.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              5.620ns (Levels of Logic = 3)
+  Source:            XLXI_1/iBusy (FF)
+  Destination:       DAC_CS (PAD)
+  Source Clock:      Clk rising
+
+  Data Path: XLXI_1/iBusy to DAC_CS
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRSE:C->Q            5   0.591   0.633  iBusy (iBusy)
+     INV:I->O              1   0.704   0.420  DAC_CS1_INV_0 (DAC_CS)
+     end scope: 'XLXI_1'
+     OBUF:I->O                 3.272          DAC_CS_OBUF (DAC_CS)
+    ----------------------------------------
+    Total                      5.620ns (4.567ns logic, 1.053ns route)
+                                       (81.3% logic, 18.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               7.141ns (Levels of Logic = 4)
+  Source:            Clk (PAD)
+  Destination:       SPI_SCK (PAD)
+
+  Data Path: Clk to SPI_SCK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     BUFGP:I->O          114   1.457   1.288  Clk_BUFGP (Clk_BUFGP)
+     begin scope: 'XLXI_1'
+     INV:I->O              1   0.704   0.420  SPI_SCK1_INV_0 (SPI_SCK)
+     end scope: 'XLXI_1'
+     OBUF:I->O                 3.272          SPI_SCK_OBUF (SPI_SCK)
+    ----------------------------------------
+    Total                      7.141ns (5.433ns logic, 1.708ns route)
+                                       (76.1% logic, 23.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.62 secs
+ 
+--> 
+
+Total memory usage is 4515492 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    7 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

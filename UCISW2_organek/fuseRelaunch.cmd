@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "/home/superciuper/Documents/UCISW2project/UCISW2_organek/Main_isim_beh.exe" -prj "/home/superciuper/Documents/UCISW2project/UCISW2_organek/Main_beh.prj" "work.Main" 
+-intstyle "ise" -incremental -o "C:/Users/lab/Desktop/UCISW2project-main/UCISW2_organek/PS2ToNoteTB_isim_beh.exe" -prj "C:/Users/lab/Desktop/UCISW2project-main/UCISW2_organek/PS2ToNoteTB_beh.prj" "work.PS2ToNoteTB" 

@@ -32,10 +32,10 @@ USE ieee.std_logic_1164.ALL;
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
  
-ENTITY PS2TpNoteTB IS
-END PS2TpNoteTB;
+ENTITY PS2ToNoteTB IS
+END PS2ToNoteTB;
  
-ARCHITECTURE behavior OF PS2TpNoteTB IS 
+ARCHITECTURE behavior OF PS2ToNoteTB IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
@@ -52,7 +52,7 @@ ARCHITECTURE behavior OF PS2TpNoteTB IS
     
 
    --Inputs
-   signal DO : std_logic_vector(7 downto 0) := (others => '0');
+   signal DO : std_logic_vector(7 downto 0) := "00000000";
    signal DO_Rdy : std_logic := '0';
    signal E0 : std_logic := '0';
    signal F0 : std_logic := '0';
@@ -85,23 +85,28 @@ BEGIN
 		wait for Clk_period/2;
    end process;
  
-
    -- Stimulus process
-   stim_proc: process
-   begin
-      wait for Clk_period*10; -- 220ns
-		Do_Rdy <= '1';
-		E0 <= '1';
-		F0 <= '1';
-		
-		wait for Clk_period;
-		Do_Rdy <= '0';
-		E0 <= '0';
-		F0 <= '0';
-		
-      wait;
-   end process;
-
-	DO <= X"15", X"1E" after 220ns, X"1D" after 440ns, X"26" after 360ns, X"24" after 480ns, X"25" after 600ns, X"2D" after 720ns, X"2E" after 840ns, X"2C" after  960ns, X"36" after 1080ns, X"25" after 1200ns, X"3D" after 1320ns, X"3C" after 1440ns
-	;
+   -- stim_proc: process
+   -- begin
+   --    wait for Clk_period*10; -- 220ns
+	-- 	Do_Rdy <= '1';
+	-- 	E0 <= '1';
+	-- 	F0 <= '1';
+	-- 	
+	-- 	wait for Clk_period;
+	-- 	Do_Rdy <= '0';
+	-- 	E0 <= '0';
+	-- 	F0 <= '0';
+	-- 	
+   --    wait;
+   -- end process;
+	
+	Do_Rdy <= '1';
+	E0 <= '0';
+	F0 <= '0';
+	
+	DO <= X"15", X"1E" after 220ns, X"1D" after 440ns, X"26" after 660ns, 
+	      X"24" after 880ns, X"25" after 1100ns, X"2D" after 1320ns, 
+			X"2E" after 1540ns, X"2C" after  1760ns, X"36" after 1980ns, 
+			X"35" after 2200ns, X"3D" after 2420ns, X"3C" after 2640ns;
 END;
