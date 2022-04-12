@@ -25,15 +25,10 @@
         <signal name="XLXN_42" />
         <signal name="XLXN_43" />
         <signal name="XLXN_44" />
-        <signal name="XLXN_46" />
         <signal name="XLXN_47(3:0)" />
-        <signal name="XLXN_48" />
-        <signal name="XLXN_49" />
         <signal name="Clk" />
-        <signal name="PS2_Data" />
         <signal name="PS2_Clk" />
-        <signal name="XLXN_60(7:0)" />
-        <signal name="XLXN_61" />
+        <signal name="PS2_Data" />
         <port polarity="Output" name="SPI_MOSI" />
         <port polarity="Output" name="SPI_MISO" />
         <port polarity="Output" name="SPI_SCK" />
@@ -45,8 +40,8 @@
         <port polarity="Output" name="SF_CE0" />
         <port polarity="Output" name="FPGA_INIT_B" />
         <port polarity="Input" name="Clk" />
-        <port polarity="Input" name="PS2_Data" />
         <port polarity="Input" name="PS2_Clk" />
+        <port polarity="Input" name="PS2_Data" />
         <blockdef name="DACWrite">
             <timestamp>2022-3-16T10:37:55</timestamp>
             <line x2="0" y1="-544" y2="-544" x1="64" />
@@ -111,6 +106,25 @@
             <rect width="64" x="320" y="-300" height="24" />
             <line x2="384" y1="-288" y2="-288" x1="320" />
         </blockdef>
+        <blockdef name="VGAtxt48x20">
+            <timestamp>2022-4-12T20:35:48</timestamp>
+            <rect width="304" x="64" y="-640" height="728" />
+            <rect width="64" x="0" y="-620" height="24" />
+            <line x2="0" y1="-608" y2="-608" x1="64" />
+            <line x2="0" y1="-448" y2="-448" x1="64" />
+            <line x2="0" y1="-384" y2="-384" x1="64" />
+            <line x2="0" y1="-320" y2="-320" x1="64" />
+            <line x2="0" y1="64" y2="64" x1="64" />
+            <line x2="0" y1="0" y2="0" x1="64" />
+            <line x2="0" y1="-224" y2="-224" x1="64" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <line x2="432" y1="-352" y2="-352" x1="368" />
+            <line x2="432" y1="-608" y2="-608" x1="368" />
+            <line x2="432" y1="-544" y2="-544" x1="368" />
+            <line x2="432" y1="-480" y2="-480" x1="368" />
+            <line x2="0" y1="-544" y2="-544" x1="64" />
+        </blockdef>
         <block symbolname="DACWrite" name="XLXI_1">
             <blockpin name="Reset" />
             <blockpin signalname="XLXN_1" name="Start" />
@@ -156,6 +170,22 @@
             <blockpin signalname="XLXN_42" name="DO_Rdy" />
             <blockpin signalname="XLXN_41(7:0)" name="DO(7:0)" />
             <blockpin signalname="Clk" name="Clk_Sys" />
+        </block>
+        <block symbolname="VGAtxt48x20" name="XLXI_7">
+            <blockpin name="Char_DI(7:0)" />
+            <blockpin name="Home" />
+            <blockpin name="NewLine" />
+            <blockpin name="Goto00" />
+            <blockpin name="Clk_Sys" />
+            <blockpin name="Clk_50MHz" />
+            <blockpin name="CursorOn" />
+            <blockpin name="ScrollEn" />
+            <blockpin name="ScrollClear" />
+            <blockpin name="Busy" />
+            <blockpin name="VGA_HS" />
+            <blockpin name="VGA_VS" />
+            <blockpin name="VGA_RGB" />
+            <blockpin name="Char_WE" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -218,17 +248,6 @@
         <iomarker fontsize="28" x="2624" y="1504" name="FPGA_INIT_B" orien="R0" />
         <iomarker fontsize="28" x="2624" y="992" name="SPI_MISO" orien="R0" />
         <iomarker fontsize="28" x="2624" y="1120" name="DAC_CS" orien="R0" />
-        <branch name="XLXN_41(7:0)">
-            <wire x2="736" y1="1120" y2="1120" x1="608" />
-            <wire x2="736" y1="1120" y2="1376" x1="736" />
-            <wire x2="1024" y1="1376" y2="1376" x1="736" />
-        </branch>
-        <branch name="XLXN_43">
-            <wire x2="1024" y1="1184" y2="1184" x1="608" />
-        </branch>
-        <branch name="XLXN_44">
-            <wire x2="1024" y1="1248" y2="1248" x1="608" />
-        </branch>
         <branch name="XLXN_47(3:0)">
             <wire x2="1584" y1="1120" y2="1120" x1="1408" />
         </branch>
@@ -237,8 +256,8 @@
             <wire x2="160" y1="1312" y2="1520" x1="160" />
             <wire x2="912" y1="1520" y2="1520" x1="160" />
             <wire x2="224" y1="1312" y2="1312" x1="160" />
-            <wire x2="224" y1="1248" y2="1248" x1="160" />
             <wire x2="160" y1="1248" y2="1312" x1="160" />
+            <wire x2="224" y1="1248" y2="1248" x1="160" />
             <wire x2="1456" y1="992" y2="992" x1="912" />
             <wire x2="1456" y1="992" y2="1632" x1="1456" />
             <wire x2="2064" y1="1632" y2="1632" x1="1456" />
@@ -254,22 +273,38 @@
         </branch>
         <instance x="1024" y="1408" name="XLXI_4" orien="R0">
         </instance>
+        <branch name="XLXN_42">
+            <wire x2="800" y1="1312" y2="1312" x1="608" />
+            <wire x2="1008" y1="1120" y2="1120" x1="800" />
+            <wire x2="1024" y1="1120" y2="1120" x1="1008" />
+            <wire x2="800" y1="1120" y2="1312" x1="800" />
+        </branch>
+        <branch name="XLXN_41(7:0)">
+            <wire x2="736" y1="1120" y2="1120" x1="608" />
+            <wire x2="736" y1="1120" y2="1376" x1="736" />
+            <wire x2="1008" y1="1376" y2="1376" x1="736" />
+            <wire x2="1024" y1="1376" y2="1376" x1="1008" />
+        </branch>
+        <branch name="XLXN_44">
+            <wire x2="1008" y1="1248" y2="1248" x1="608" />
+            <wire x2="1024" y1="1248" y2="1248" x1="1008" />
+        </branch>
+        <branch name="XLXN_43">
+            <wire x2="1008" y1="1184" y2="1184" x1="608" />
+            <wire x2="1024" y1="1184" y2="1184" x1="1008" />
+        </branch>
+        <iomarker fontsize="28" x="192" y="1120" name="PS2_Clk" orien="R180" />
+        <iomarker fontsize="28" x="192" y="1184" name="PS2_Data" orien="R180" />
+        <iomarker fontsize="28" x="112" y="1312" name="Clk" orien="R180" />
         <instance x="224" y="1344" name="XLXI_3" orien="R0">
         </instance>
-        <branch name="PS2_Data">
-            <wire x2="224" y1="1184" y2="1184" x1="192" />
-        </branch>
         <branch name="PS2_Clk">
             <wire x2="224" y1="1120" y2="1120" x1="192" />
         </branch>
-        <iomarker fontsize="28" x="112" y="1312" name="Clk" orien="R180" />
-        <iomarker fontsize="28" x="192" y="1184" name="PS2_Data" orien="R180" />
-        <iomarker fontsize="28" x="192" y="1120" name="PS2_Clk" orien="R180" />
-        <branch name="XLXN_42">
-            <wire x2="800" y1="1312" y2="1312" x1="608" />
-            <wire x2="800" y1="1120" y2="1312" x1="800" />
-            <wire x2="1008" y1="1120" y2="1120" x1="800" />
-            <wire x2="1024" y1="1120" y2="1120" x1="1008" />
+        <branch name="PS2_Data">
+            <wire x2="224" y1="1184" y2="1184" x1="192" />
         </branch>
+        <instance x="2144" y="2384" name="XLXI_7" orien="R0">
+        </instance>
     </sheet>
 </drawing>
