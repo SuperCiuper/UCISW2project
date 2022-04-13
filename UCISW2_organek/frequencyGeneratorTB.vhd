@@ -42,7 +42,7 @@ ARCHITECTURE behavior OF frequencyGeneratorTB IS
 	 
     COMPONENT frequencyGenerator
     PORT(
-         Note : IN  std_logic_vector(3 downto 0);
+         Note : IN  std_logic_vector(7 downto 0);
          Start : OUT  std_logic;
          Cmd : OUT  std_logic_vector(3 downto 0);
          Addr : OUT  std_logic_vector(3 downto 0);
@@ -53,7 +53,7 @@ ARCHITECTURE behavior OF frequencyGeneratorTB IS
     
 
    --Inputs
-   signal Note : std_logic_vector(3 downto 0) := (others => '0');
+   signal Note : std_logic_vector(7 downto 0) := (others => '0');
    signal Clk : std_logic := '0';
 
  	--Outputs
@@ -86,7 +86,7 @@ BEGIN
 		wait for Clk_period/2;
    end process;
  
-	Note <= "0001";
+	Note <= X"51";
 
 END;
 

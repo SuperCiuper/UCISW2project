@@ -1,0 +1,2 @@
+vhdl work "imageGenerator.vhd"
+vhdl work "imageGeneratorTB.vhd"

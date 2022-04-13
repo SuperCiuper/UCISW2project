@@ -1,6 +1,6 @@
 [Inputs]
 Clk
-=Note[3:0]=
+=Note[7:0]=
 [Outputs]
 Start
 =Cmd[3:0]=

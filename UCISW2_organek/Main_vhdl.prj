@@ -1,3 +1,4 @@
-vhdl work "C:\Users\lab\Desktop\UCISW2project-main\UCISW2_organek\PS2ToNote.vhd"
-vhdl work "C:\Users\lab\Desktop\UCISW2project-main\UCISW2_organek\frequencyGenerator.vhd"
-vhdl work "C:\Users\lab\Desktop\UCISW2project-main\UCISW2_organek\Main.vhf"
+vhdl work "C:\Users\lab\Documents\GitHub\UCISW2project\UCISW2_organek\PS2ToNote.vhd"
+vhdl work "C:\Users\lab\Documents\GitHub\UCISW2project\UCISW2_organek\imageGenerator.vhd"
+vhdl work "C:\Users\lab\Documents\GitHub\UCISW2project\UCISW2_organek\frequencyGenerator.vhd"
+vhdl work "C:\Users\lab\Documents\GitHub\UCISW2project\UCISW2_organek\Main.vhf"

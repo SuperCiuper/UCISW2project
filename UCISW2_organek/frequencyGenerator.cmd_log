@@ -1,2 +1,8 @@
 vhdtdtfi -lib work frequencyGenerator.vhd -prj UCISW2_organek -o frequencyGenerator.spl -module frequencyGenerator -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
 spl2sym -intstyle ise -family spartan3e frequencyGenerator.spl /home/superciuper/Documents/UCISW2/UCISW2_organek/frequencyGenerator.sym 
+vhdtdtfi -lib work frequencyGenerator.vhd -prj UCISW2_organek -o frequencyGenerator.spl -module frequencyGenerator -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e frequencyGenerator.spl C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/frequencyGenerator.sym 
+vhdtdtfi -lib work frequencyGenerator.vhd -prj UCISW2_organek -o frequencyGenerator.spl -module frequencyGenerator -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e frequencyGenerator.spl C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/frequencyGenerator.sym 
+vhdtdtfi -lib work frequencyGenerator.vhd -prj UCISW2_organek -o frequencyGenerator.spl -module frequencyGenerator -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e frequencyGenerator.spl C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/frequencyGenerator.sym 

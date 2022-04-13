@@ -37,7 +37,7 @@ entity imageGenerator is
            Char_WE : out  STD_LOGIC;
            Home : out  STD_LOGIC;
            NewLine : out  STD_LOGIC;
-           Goto00 : out  STD_LOGIC;
+           Goto00 : out  STD_LOGIC := '0';
            CursorOn : out  STD_LOGIC;
            ScrollEn : out  STD_LOGIC;
            ScrollClear : out  STD_LOGIC);
@@ -45,14 +45,16 @@ end imageGenerator;
 
 architecture Behavioral of imageGenerator is
 	signal noteChanged : STD_LOGIC := '1';
-	variable notesCorrect : integer := 0;
-	variable notesWrong : integer := 0;
-	type arrayOfChars is array (0 to 3) of std_logic_vector (7 downto 0);
-	variable musicToPlay : arrayOfChars := ( X"51", X"57", X"45", X"52" );
-	
+	signal notesCorrect : integer := 0;
+	signal notesWrong : integer := 0;
+	type arrayOfChars is array (0 to 7) of std_logic_vector (7 downto 0);
+	signal musicToPlay : arrayOfChars := ( X"51", X"00", X"57", X"00", X"45", X"00", X"52", X"00" );
+	signal width : integer := 0;
+	signal height : integer := 0;
+ 
 begin
 		
-	frequencyProcess : process(Note_Rdy)
+	checkCorrectNoteProcess : process(Note_Rdy)
 	begin
 		
 		if rising_edge(Note_Rdy) then-- nowa nutka, sprawdzić czy poprawna
@@ -62,65 +64,71 @@ begin
 				notesWrong <= notesWrong + 1;
 			end if;
 		end if;
-		
-		previousNote <= Note;
-	end process;
+	end process checkCorrectNoteProcess;
 	
-	counterFrequency : process( Clk )
+	displayProcess : process (Clk)
 	begin
-	
-		if rising_edge(Note_Rdy) then --refresh screen
-			wait until rising_edge(Clk); -- wait for next signal
-			Char_WE <= '0';
-			NewLine <= '1';
-			wait until rising_edge(Clk); -- wait for next signal
-			Char_WE <= '1';
-			NewLine <= '0';
-			
-			musicToPlayLoop : for q in 0 to musicToPlay'length - 1 loop --prints music to play
-				Char_DI <= musicToPlay(q);
-				wait until rising_edge(Clk); -- wait for next signal
-				Char_DI <= "00000000";
-				wait until rising_edge(Clk); -- wait for next signal
+		if rising_edge(Clk) then
+			case height is
+				when 0 => -- empty line
+					Goto00 <= '0';
+					Char_WE <= '0';
+					NewLine <= '1';
+					height <= height + 1;
+					width <= 0;
 
-			end loop musicToPlayLoop;
-		
-			Char_WE <= '0';
-			NewLine <= '1';
-			wait until rising_edge(Clk); -- wait for next signal
-			Char_WE <= '1';
-			NewLine <= '0';
-			
-			-- tutaj wypisanie wyniku, ale to w przyszłości
-			
-			Char_WE <= '0';
-			NewLine <= '1';
-			wait until rising_edge(Clk); -- wait for next signal
-			Char_WE <= '1';
-			NewLine <= '0';
-			
-			musicPlayedLoop : for q in 0 to notesCorrect - 1 loop --prints music to play
-				Char_DI <= musicToPlay(q);
-				wait until rising_edge(Clk); -- wait for next signal
-				Char_DI <= "00000000";
-				wait until rising_edge(Clk); -- wait for next signal
+				when 1 =>
+					Char_WE <= '1';
+					NewLine <= '0';
+					if(width = musicToPlay'length) then
+						height <= height + 1;
+					else
+						Char_DI <= musicToPlay(width);
+						width <= width + 1;
+					end if;
+					
+				when 2 => -- empty line
+					Char_WE <= '0';
+					NewLine <= '1';
+					height <= height + 1;
+					width <= 0;
+					
+				when 3 => -- counter
+					height <= height + 1;
+					
+				when 4 => -- empty line
+					Char_WE <= '0';
+					NewLine <= '1';
+					height <= height + 1;
+					width <= 0;
 
-			end loop musicPlayedLoop;
+				when 5 =>
+					Char_WE <= '1';
+					NewLine <= '0';
+					if(width = (notesCorrect * 2)) then
+						height <= height + 1;
+					else
+						Char_DI <= musicToPlay(width);
+						width <= width + 1;
+					end if;
+					
+				when 6 => 
+					Char_WE <= '0';
+					Goto00 <= '1';
+					height <= 0;
+					
+				when others => height <= 0;
+			end case;
 			
-			Char_WE <= '0';
-			Goto00 <= '1';
-			wait until rising_edge(Clk); -- wait for next signal
-			Goto00 <= '0';
 		end if;
 		
-	end process;
+	end process displayProcess;
 
-	CursonOn <= '1'; --for debug purposes
+	CursorOn <= '0'; --for debug purposes
 	ScrollEn <= '0';
-	
+	Home <= '0';
+	ScrollClear <= '0';
 end Behavioral;
-
-
 
 
 

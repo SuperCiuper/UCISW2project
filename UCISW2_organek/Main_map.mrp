@@ -9,33 +9,35 @@ Target Device  : xc3s500e
 Target Package : fg320
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Thu Apr 07 17:45:30 2022
+Mapped Date    : Wed Apr 13 19:22:14 2022
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    0
 Logic Utilization:
-  Number of Slice Flip Flops:            91 out of   9,312    1%
-  Number of 4 input LUTs:                91 out of   9,312    1%
+  Number of Slice Flip Flops:           277 out of   9,312    2%
+  Number of 4 input LUTs:               379 out of   9,312    4%
 Logic Distribution:
-  Number of occupied Slices:             82 out of   4,656    1%
-    Number of Slices containing only related logic:      82 out of      82 100%
-    Number of Slices containing unrelated logic:          0 out of      82   0%
+  Number of occupied Slices:            305 out of   4,656    6%
+    Number of Slices containing only related logic:     305 out of     305 100%
+    Number of Slices containing unrelated logic:          0 out of     305   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         109 out of   9,312    1%
-    Number used as logic:                91
-    Number used as a route-thru:         18
+  Total Number of 4 input LUTs:         507 out of   9,312    5%
+    Number used as logic:               375
+    Number used as a route-thru:        128
+    Number used as Shift registers:       4
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                 13 out of     232    5%
-  Number of BUFGMUXs:                     1 out of      24    4%
+  Number of bonded IOBs:                 18 out of     232    7%
+  Number of RAMB16s:                      2 out of      20   10%
+  Number of BUFGMUXs:                     2 out of      24    8%
 
-Average Fanout of Non-Clock Nets:                2.88
+Average Fanout of Non-Clock Nets:                3.02
 
-Peak Memory Usage:  4404 MB
+Peak Memory Usage:  4420 MB
 Total REAL time to MAP completion:  1 secs 
 Total CPU time to MAP completion:   1 secs 
 
@@ -89,15 +91,12 @@ INFO:LIT:243 - Logical network XLXI_1/ResBusy/BusyExt has no load.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:MapLib:159 - Net Timing constraints on signal Clk are pushed forward
    through input buffer.
-INFO:LIT:244 - All of the single ended outputs in this design are using slew
-   rate limited output drivers. The delay on speed critical single ended outputs
-   can be dramatically reduced by designating them as fast outputs.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-   5 block(s) removed
-  32 block(s) optimized away
-  13 signal(s) removed
+  17 block(s) removed
+  55 block(s) optimized away
+  25 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -129,7 +128,34 @@ The signal "XLXI_1/ResBusy/qBusyExt" is sourceless and has been removed.
      Sourceless block "XLXI_1/ResBusy/BusyExt" (SFF) removed.
 The signal "XLXI_1/ResBusy/qBusyInt" is sourceless and has been removed.
  Sourceless block "XLXI_1/ResBusy/qBusyExt" (FF) removed.
+The signal "XLXI_6/I_CursorCnt/Result<4>1" is sourceless and has been removed.
+The signal "XLXI_6/I_CursorCnt/Result<3>1" is sourceless and has been removed.
+The signal "XLXI_6/I_CursorCnt/Result<2>1" is sourceless and has been removed.
+The signal "XLXI_6/I_CursorCnt/Result<1>1" is sourceless and has been removed.
+The signal "XLXI_6/I_CursorCnt/Result<0>1" is sourceless and has been removed.
+The signal "XLXI_6/N38" is sourceless and has been removed.
+ Sourceless block "XLXI_6/I_CursorCnt/LastLine52" (ROM) removed.
+  The signal "XLXI_6/I_CursorCnt/N5" is sourceless and has been removed.
+The signal "XLXI_6/N46" is sourceless and has been removed.
+The signal "XLXI_6/I_CursorCnt/Result<4>11" is sourceless and has been removed.
+ Sourceless block "XLXI_6/I_CursorCnt/Result<4>1_f5" (MUX) removed.
+The signal "XLXI_6/I_CursorCnt/Result<4>12" is sourceless and has been removed.
+The signal "XLXI_6/I_CursorCnt/LineCnt_mux0001<2>123/O" is sourceless and has
+been removed.
+The signal "XLXI_6/I_CursorCnt/LastLine52_SW0/O" is sourceless and has been
+removed.
 Unused block "XLXI_1/ResBusy/qBusyInt" (FF) removed.
+Unused block "XLXI_6/I_CursorCnt/LastLine52_SW0" (ROM) removed.
+Unused block "XLXI_6/I_CursorCnt/LastLine52_SW1" (ROM) removed.
+Unused block "XLXI_6/I_CursorCnt/LineCnt_mux0001<2>123" (ROM) removed.
+Unused block "XLXI_6/I_CursorCnt/LineCnt_mux0001<2>150_SW0" (ROM) removed.
+Unused block "XLXI_6/I_CursorCnt/Mcount_ScrollBase_xor<0>11_INV_0" (BUF)
+removed.
+Unused block "XLXI_6/I_CursorCnt/Mcount_ScrollBase_xor<1>11" (ROM) removed.
+Unused block "XLXI_6/I_CursorCnt/Mcount_ScrollBase_xor<2>11" (ROM) removed.
+Unused block "XLXI_6/I_CursorCnt/Result<3>11" (ROM) removed.
+Unused block "XLXI_6/I_CursorCnt/Result<4>11" (ROM) removed.
+Unused block "XLXI_6/I_CursorCnt/Result<4>12" (ROM) removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
@@ -189,6 +215,40 @@ LUT3 		XLXI_1/regPISO_mux0000<7>1
    optimized to 0
 GND 		XLXI_3/XST_GND
 VCC 		XLXI_3/XST_VCC
+LUT2 		XLXI_6/I_CursorCnt/LastLine5111
+   optimized to 0
+LUT4_D 		XLXI_6/I_CursorCnt/LastLine524
+   optimized to 0
+LOCALBUF 		XLXI_6/I_CursorCnt/LastLine524/LUT4_D_BUF
+LUT3_L 		XLXI_6/I_CursorCnt/LastLine580_SW0
+   optimized to 0
+LOCALBUF 		XLXI_6/I_CursorCnt/LastLine580_SW0/LUT3_L_BUF
+LUT4 		XLXI_6/I_CursorCnt/LineCnt_mux0001<2>150
+   optimized to 1
+LUT4 		XLXI_6/I_CursorCnt/NextState_0_mux000031
+   optimized to 0
+LUT4 		XLXI_6/I_CursorCnt/NextState_0_mux000031_SW0
+   optimized to 1
+LUT2 		XLXI_6/I_CursorCnt/RAM_DI_Out<3>1
+   optimized to 0
+LUT2 		XLXI_6/I_CursorCnt/RAM_DI_Out<5>1
+   optimized to 0
+LUT2 		XLXI_6/I_CursorCnt/RAM_DI_Out<7>1
+   optimized to 0
+FDE 		XLXI_6/I_CursorCnt/ScrollBase_0
+   optimized to 0
+FDE 		XLXI_6/I_CursorCnt/ScrollBase_1
+   optimized to 0
+FDE 		XLXI_6/I_CursorCnt/ScrollBase_2
+   optimized to 0
+FDE 		XLXI_6/I_CursorCnt/ScrollBase_3
+   optimized to 0
+FDE 		XLXI_6/I_CursorCnt/ScrollBase_4
+   optimized to 0
+LUT2 		XLXI_6/XLXI_113/CursorActive_and0001_SW0
+   optimized to 1
+GND 		XLXI_6/XLXI_141
+VCC 		XLXI_6/XLXI_93
 GND 		XST_GND
 VCC 		XST_VCC
 
@@ -215,6 +275,11 @@ Section 6 - IOB Properties
 | SPI_MOSI                           | IOB              | OUTPUT    | LVCMOS33             |       | 6        | SLOW |              |          | 0 / 0    |
 | SPI_SCK                            | IOB              | OUTPUT    | LVCMOS33             |       | 6        | SLOW |              |          | 0 / 0    |
 | SPI_SS_B                           | IOB              | OUTPUT    | LVCMOS33             |       | 6        | SLOW |              |          | 0 / 0    |
+| VGA_B                              | IOB              | OUTPUT    | LVTTL                |       | 8        | FAST |              |          | 0 / 0    |
+| VGA_G                              | IOB              | OUTPUT    | LVTTL                |       | 8        | FAST |              |          | 0 / 0    |
+| VGA_HS                             | IOB              | OUTPUT    | LVTTL                |       | 8        | FAST |              |          | 0 / 0    |
+| VGA_R                              | IOB              | OUTPUT    | LVTTL                |       | 8        | FAST |              |          | 0 / 0    |
+| VGA_VS                             | IOB              | OUTPUT    | LVTTL                |       | 8        | FAST |              |          | 0 / 0    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Section 7 - RPMs

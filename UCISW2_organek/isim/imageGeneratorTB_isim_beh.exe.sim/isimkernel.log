@@ -1,0 +1,28 @@
+Command line:
+   imageGeneratorTB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50327
+
+Wed Apr 13 19:23:58 2022
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5150.85 Meg
+
+ Total Signals          : 28
+ Total Nets             : 94
+ Total Signal Drivers   : 15
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 9
+ Total Traceable Variables  : 9
+ Total Scalar Nets and Variables : 455
+
+ Total Simulation Time: 0.03125 sec
+
+ Current Memory Usage: 4993.56 Meg
+
+Wed Apr 13 19:26:05 2022
+

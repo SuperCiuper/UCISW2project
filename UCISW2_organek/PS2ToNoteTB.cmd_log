@@ -1,0 +1,2 @@
+vhdtdtfi -lib work PS2ToNote.vhd -lib work PS2ToNoteTB.vhd -prj UCISW2_organek -o PS2ToNoteTB.spl -module PS2ToNoteTB -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PS2ToNoteTB.spl C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/PS2ToNoteTB.sym 

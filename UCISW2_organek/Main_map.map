@@ -9,7 +9,7 @@ Target Device  : xc3s500e
 Target Package : fg320
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Thu Apr 07 17:45:30 2022
+Mapped Date    : Wed Apr 13 19:22:14 2022
 
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 INFO:Security:54 - 'xc3s500e' is a WebPack part.
@@ -30,26 +30,28 @@ Design Summary:
 Number of errors:      0
 Number of warnings:    0
 Logic Utilization:
-  Number of Slice Flip Flops:            91 out of   9,312    1%
-  Number of 4 input LUTs:                91 out of   9,312    1%
+  Number of Slice Flip Flops:           277 out of   9,312    2%
+  Number of 4 input LUTs:               379 out of   9,312    4%
 Logic Distribution:
-  Number of occupied Slices:             82 out of   4,656    1%
-    Number of Slices containing only related logic:      82 out of      82 100%
-    Number of Slices containing unrelated logic:          0 out of      82   0%
+  Number of occupied Slices:            305 out of   4,656    6%
+    Number of Slices containing only related logic:     305 out of     305 100%
+    Number of Slices containing unrelated logic:          0 out of     305   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         109 out of   9,312    1%
-    Number used as logic:                91
-    Number used as a route-thru:         18
+  Total Number of 4 input LUTs:         507 out of   9,312    5%
+    Number used as logic:               375
+    Number used as a route-thru:        128
+    Number used as Shift registers:       4
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                 13 out of     232    5%
-  Number of BUFGMUXs:                     1 out of      24    4%
+  Number of bonded IOBs:                 18 out of     232    7%
+  Number of RAMB16s:                      2 out of      20   10%
+  Number of BUFGMUXs:                     2 out of      24    8%
 
-Average Fanout of Non-Clock Nets:                2.88
+Average Fanout of Non-Clock Nets:                3.02
 
-Peak Memory Usage:  4404 MB
+Peak Memory Usage:  4420 MB
 Total REAL time to MAP completion:  1 secs 
 Total CPU time to MAP completion:   1 secs 
 

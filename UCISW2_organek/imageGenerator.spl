@@ -1,0 +1,14 @@
+[Inputs]
+Clk
+Note_Rdy
+=Note[7:0]=
+[Outputs]
+Char_WE
+Home
+NewLine
+Goto00
+CursorOn
+ScrollEn
+ScrollClear
+=Char_DI[7:0]=
+[BiDir]

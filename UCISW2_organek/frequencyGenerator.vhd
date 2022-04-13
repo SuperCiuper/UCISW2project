@@ -52,19 +52,19 @@ begin
 	frequencyProcess : process(Note, frequency)
 	begin
 		case Note is 
-			when X"15" => frequency <= 2987;
-			when X"1E" => frequency <= 2819;
-			when X"1D" => frequency <= 2660;
-			when X"26" => frequency <= 2511;
-			when X"24" => frequency <= 2370;
-			when X"2D" => frequency <= 2237;
-			when X"2E" => frequency <= 2112;
-			when X"2C" => frequency <= 1993;
+			when X"51" => frequency <= 2987;
+			when X"32" => frequency <= 2819;
+			when X"57" => frequency <= 2660;
+			when X"33" => frequency <= 2511;
+			when X"45" => frequency <= 2370;
+			when X"52" => frequency <= 2237;
+			when X"35" => frequency <= 2112;
+			when X"54" => frequency <= 1993;
 			when X"36" => frequency <= 1881;
-			when X"35" => frequency <= 1776;
-			when X"3D" => frequency <= 1676;
-			when X"3C" => frequency <= 1582;
-			when X"43" => frequency <= 1493;			
+			when X"59" => frequency <= 1776;
+			when X"37" => frequency <= 1676;
+			when X"55" => frequency <= 1582;
+			when X"49" => frequency <= 1493;			
 			when others => frequency <= 0; 
 		end case; 
 		

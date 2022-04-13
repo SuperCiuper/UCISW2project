@@ -46,7 +46,8 @@ ARCHITECTURE behavior OF PS2ToNoteTB IS
          E0 : IN  std_logic;
          F0 : IN  std_logic;
          Clk : IN  std_logic;
-         Note : OUT  std_logic_vector(7 downto 0)
+         Note : OUT  std_logic_vector(7 downto 0);
+			Note_Rdy : OUT std_logic
         );
     END COMPONENT;
     
@@ -57,10 +58,11 @@ ARCHITECTURE behavior OF PS2ToNoteTB IS
    signal E0 : std_logic := '0';
    signal F0 : std_logic := '0';
    signal Clk : std_logic := '0';
-
+	
  	--Outputs
    signal Note : std_logic_vector(7 downto 0);
-
+	signal Note_Rdy : std_logic;
+	
    -- Clock period definitions
    constant Clk_period : time := 20 ns; --50MHz
  
@@ -73,7 +75,8 @@ BEGIN
           E0 => E0,
           F0 => F0,
           Clk => Clk,
-          Note => Note
+          Note => Note,
+			 Note_Rdy => Note_Rdy
         );
 
    -- Clock process definitions
@@ -101,11 +104,11 @@ BEGIN
    --    wait;
    -- end process;
 	
-	Do_Rdy <= '0', '1' after 50ns; --testowane dla rising edge i pupa
+	Do_Rdy <= '1'; --testowane dla rising edge i pupa
 	E0 <= '0';
-	F0 <= '0';
+	F0 <= '0', '1' after 200ns, '0' after 220ns;
 	
-	DO <= X"15", X"1E" after 220ns, X"1D" after 440ns, X"26" after 660ns, 
+	DO <= X"15", X"00" after 200ns, X"1E" after 220ns, X"1D" after 440ns, X"26" after 660ns, 
 	      X"24" after 880ns, X"25" after 1100ns, X"2D" after 1320ns, 
 			X"2E" after 1540ns, X"2C" after  1760ns, X"36" after 1980ns, 
 			X"35" after 2200ns, X"3D" after 2420ns, X"3C" after 2640ns;
