@@ -46,7 +46,7 @@ ARCHITECTURE behavior OF PS2ToNoteTB IS
          E0 : IN  std_logic;
          F0 : IN  std_logic;
          Clk : IN  std_logic;
-         Note : OUT  std_logic_vector(3 downto 0)
+         Note : OUT  std_logic_vector(7 downto 0)
         );
     END COMPONENT;
     
@@ -59,7 +59,7 @@ ARCHITECTURE behavior OF PS2ToNoteTB IS
    signal Clk : std_logic := '0';
 
  	--Outputs
-   signal Note : std_logic_vector(3 downto 0);
+   signal Note : std_logic_vector(7 downto 0);
 
    -- Clock period definitions
    constant Clk_period : time := 20 ns; --50MHz
@@ -101,7 +101,7 @@ BEGIN
    --    wait;
    -- end process;
 	
-	Do_Rdy <= '1';
+	Do_Rdy <= '0', '1' after 50ns; --testowane dla rising edge i pupa
 	E0 <= '0';
 	F0 <= '0';
 	

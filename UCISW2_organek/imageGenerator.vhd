@@ -31,7 +31,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity imageGenerator is
     Port ( Clk : in STD_LOGIC;
-			  Note : in  STD_LOGIC_VECTOR (3 downto 0);
+			  Note : in  STD_LOGIC_VECTOR (7 downto 0);
+			  Note_Rdy : in STD_LOGIC;
            Char_DI : out  STD_LOGIC_VECTOR (7 downto 0);
            Char_WE : out  STD_LOGIC;
            Home : out  STD_LOGIC;
@@ -43,39 +44,19 @@ entity imageGenerator is
 end imageGenerator;
 
 architecture Behavioral of imageGenerator is
-	signal previousNote : STD_LOGIC_VECTOR (3 downto 0) := "0000";
 	signal noteChanged : STD_LOGIC := '1';
 	variable notesCorrect : integer := 0;
 	variable notesWrong : integer := 0;
 	type arrayOfChars is array (0 to 3) of std_logic_vector (7 downto 0);
-	variable musicToPlay : arrayOfChars := ( "01000011", "01000011", "01000011", "01000011" );
+	variable musicToPlay : arrayOfChars := ( X"51", X"57", X"45", X"52" );
 	
 begin
 		
-	frequencyProcess : process(Note, Char_DI)
+	frequencyProcess : process(Note_Rdy)
 	begin
-		case Note is 
-			when "0001" => Char_DI <= "00000000"; -- reprezentacja nuty za pomocą ascii
-			when "0010" => Char_DI <= "00000000"; -- reprezentacja nuty za pomocą ascii
-			when "0011" => Char_DI <= "00000000"; -- reprezentacja nuty za pomocą ascii
-			when "0100" => Char_DI <= "00000000"; -- reprezentacja nuty za pomocą ascii
-			when "0101" => Char_DI <= "00000000"; -- reprezentacja nuty za pomocą ascii
-			when "0110" => Char_DI <= "00000000"; -- reprezentacja nuty za pomocą ascii
-			when "0111" => Char_DI <= "00000000"; -- reprezentacja nuty za pomocą ascii
-			when "1000" => Char_DI <= "00000000"; -- reprezentacja nuty za pomocą ascii
-			when "1001" => Char_DI <= "00000000"; -- reprezentacja nuty za pomocą ascii
-			when "1010" => Char_DI <= "00000000"; -- reprezentacja nuty za pomocą ascii
-			when "1011" => Char_DI <= "00000000"; -- reprezentacja nuty za pomocą ascii
-			when "1100" => Char_DI <= "00000000"; -- reprezentacja nuty za pomocą ascii
-			when "1101" => Char_DI <= "00000000"; -- reprezentacja nuty za pomocą ascii
-			when others => Char_DI <= "00000000"; -- reprezentacja nuty za pomocą ascii
-		end case; 
 		
-		if Note = previousNote then
-			noteChanged <= '0';
-		else -- nowa nutka, sprawdzić czy poprawna
-			noteChanged <= '1';
-			if Char_DI = musicToPlay(notesCorrect) then
+		if rising_edge(Note_Rdy) then-- nowa nutka, sprawdzić czy poprawna
+			if Note = musicToPlay(notesCorrect) then
 				notesCorrect <= notesCorrect + 1;
 			else
 				notesWrong <= notesWrong + 1;
@@ -88,7 +69,7 @@ begin
 	counterFrequency : process( Clk )
 	begin
 	
-		if nodeChanged = '1' then --refresh screen
+		if rising_edge(Note_Rdy) then --refresh screen
 			wait until rising_edge(Clk); -- wait for next signal
 			Char_WE <= '0';
 			NewLine <= '1';
@@ -106,7 +87,7 @@ begin
 		
 			Char_WE <= '0';
 			NewLine <= '1';
-			-- wait until rising_edge(Clk); -- wait for next signal
+			wait until rising_edge(Clk); -- wait for next signal
 			Char_WE <= '1';
 			NewLine <= '0';
 			
@@ -118,13 +99,13 @@ begin
 			Char_WE <= '1';
 			NewLine <= '0';
 			
-			musicToPlayLoop : for q in 0 to notesCorrect loop --prints music to play
+			musicPlayedLoop : for q in 0 to notesCorrect - 1 loop --prints music to play
 				Char_DI <= musicToPlay(q);
 				wait until rising_edge(Clk); -- wait for next signal
 				Char_DI <= "00000000";
 				wait until rising_edge(Clk); -- wait for next signal
 
-			end loop musicToPlayLoop;
+			end loop musicPlayedLoop;
 			
 			Char_WE <= '0';
 			Goto00 <= '1';
