@@ -49,6 +49,8 @@ architecture Behavioral of imageGenerator is
 	signal notesWrong : integer := 0;
 	type arrayOfChars is array (0 to 7) of std_logic_vector (7 downto 0);
 	signal musicToPlay : arrayOfChars := ( X"51", X"00", X"57", X"00", X"45", X"00", X"52", X"00" );
+	signal correctSign : arrayOfChars := ( X"51", X"00", X"57", X"00", X"45", X"00", X"52", X"00" );
+	signal wrongSign : arrayOfChars := ( X"51", X"00", X"57", X"00", X"45", X"00", X"52", X"00" );
 	signal width : integer := 0;
 	signal height : integer := 0;
  
@@ -69,55 +71,64 @@ begin
 	displayProcess : process (Clk)
 	begin
 		if rising_edge(Clk) then
+			Goto00 <= '0';
+			Char_WE <= '0';
+			NewLine <= '0';
 			case height is
 				when 0 => -- empty line
-					Goto00 <= '0';
-					Char_WE <= '0';
 					NewLine <= '1';
 					height <= height + 1;
 					width <= 0;
 
 				when 1 =>
-					Char_WE <= '1';
-					NewLine <= '0';
 					if(width = musicToPlay'length) then
 						height <= height + 1;
 					else
 						Char_DI <= musicToPlay(width);
 						width <= width + 1;
 					end if;
+					Char_WE <= '1';
 					
 				when 2 => -- empty line
-					Char_WE <= '0';
 					NewLine <= '1';
 					height <= height + 1;
 					width <= 0;
 					
 				when 3 => -- counter
-					height <= height + 1;
+					if(width = 23) then --23 max length
+						height <= height + 1;
+					elsif(width < 9) then
+						Char_DI <= correctSign(width);
+						width <= width + 1;
+					elsif(width < 12) then --print wynik
+						Char_DI <= "00000000";
+						width <= width + 1;
+					elsif(width < 19) then --print wynik
+						Char_DI <= wrongSign(width - 12);
+						width <= width + 1;
+					else --print wynik
+						Char_DI <= "00000000";
+						width <= width + 1;
+					end if;
+					Char_WE <= '1';
 					
 				when 4 => -- empty line
-					Char_WE <= '0';
 					NewLine <= '1';
 					height <= height + 1;
 					width <= 0;
 
 				when 5 =>
-					Char_WE <= '1';
-					NewLine <= '0';
 					if(width = (notesCorrect * 2)) then
 						height <= height + 1;
 					else
 						Char_DI <= musicToPlay(width);
 						width <= width + 1;
 					end if;
+					Char_WE <= '1';
 					
-				when 6 => 
-					Char_WE <= '0';
+				when others => 
 					Goto00 <= '1';
-					height <= 0;
-					
-				when others => height <= 0;
+					height <= '0';
 			end case;
 			
 		end if;
@@ -128,6 +139,7 @@ begin
 	ScrollEn <= '0';
 	Home <= '0';
 	ScrollClear <= '0';
+	
 end Behavioral;
 
 

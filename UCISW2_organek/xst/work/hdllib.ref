@@ -1,8 +1,8 @@
 AR imagegenerator behavioral C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/imageGenerator.vhd sub00/vhpl07 1649870528
 AR main behavioral C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/Main.vhf sub00/vhpl03 1649870530
-AR frequencygenerator behavioral C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/frequencyGenerator.vhd sub00/vhpl01 1649870524
+AR frequencygenerator behavioral /home/superciuper/Documents/UCISW2project/UCISW2_organek/frequencyGenerator.vhd sub00/vhpl01 1651684543
 AR ps2tonote behavioral C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/PS2ToNote.vhd sub00/vhpl05 1649870526
 EN imagegenerator NULL C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/imageGenerator.vhd sub00/vhpl06 1649870527
-EN frequencygenerator NULL C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/frequencyGenerator.vhd sub00/vhpl00 1649870523
+EN frequencygenerator NULL /home/superciuper/Documents/UCISW2project/UCISW2_organek/frequencyGenerator.vhd sub00/vhpl00 1651684542
 EN main NULL C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/Main.vhf sub00/vhpl02 1649870529
 EN ps2tonote NULL C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/PS2ToNote.vhd sub00/vhpl04 1649870525

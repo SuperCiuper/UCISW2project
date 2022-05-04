@@ -1,0 +1,5 @@
+set -tmpdir "/home/superciuper/Documents/UCISW2project/UCISW2_organek/xst/projnav.tmp"
+set -xsthdpdir "/home/superciuper/Documents/UCISW2project/UCISW2_organek/xst"
+elaborate
+-ifn frequencyGenerator.prj
+-ifmt mixed
