@@ -100,6 +100,6 @@ BEGIN
    end process;
  
 	Note <= X"51";
-	Note_Rdy <= '0', '1' after 50ns, '0' after 60ns;
+	Note_Rdy <= '0', '1' after 500ns, '0' after 510ns;
 
 END;

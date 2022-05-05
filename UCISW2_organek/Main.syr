@@ -109,7 +109,11 @@ Architecture behavioral of Entity frequencygenerator is up to date.
 Compiling vhdl file "C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/PS2ToNote.vhd" in Library work.
 Architecture behavioral of Entity ps2tonote is up to date.
 Compiling vhdl file "C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/imageGenerator.vhd" in Library work.
-Architecture behavioral of Entity imagegenerator is up to date.
+Entity <imagegenerator> compiled.
+Entity <imagegenerator> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/VGAtxt48x20.vhd" in Library work.
+Entity <VGAtxt48x20> compiled.
+Entity <VGAtxt48x20> (Architecture <STRUCTURE>) compiled.
 Compiling vhdl file "C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/Main.vhf" in Library work.
 Entity <main> compiled.
 Entity <main> (Architecture <behavioral>) compiled.
@@ -125,6 +129,8 @@ Analyzing hierarchy for entity <PS2ToNote> in library <work> (architecture <beha
 
 Analyzing hierarchy for entity <imageGenerator> in library <work> (architecture <behavioral>).
 
+Analyzing hierarchy for entity <VGAtxt48x20> in library <work> (architecture <STRUCTURE>).
+
 
 =========================================================================
 *                            HDL Analysis                               *
@@ -132,7 +138,6 @@ Analyzing hierarchy for entity <imageGenerator> in library <work> (architecture 
 Analyzing Entity <Main> in library <work> (Architecture <behavioral>).
 WARNING:Xst:2211 - "C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/Main.vhf" line 164: Instantiating black box module <DACWrite>.
 WARNING:Xst:2211 - "C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/Main.vhf" line 192: Instantiating black box module <PS2_Kbd>.
-WARNING:Xst:2211 - "C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/Main.vhf" line 224: Instantiating black box module <VGAtxt48x20>.
 Entity <Main> analyzed. Unit <Main> generated.
 
 Analyzing Entity <frequencyGenerator> in library <work> (Architecture <behavioral>).
@@ -148,9 +153,469 @@ INFO:Xst:1432 - Contents of array <musicToPlay> may be accessed with a negative 
 INFO:Xst:1433 - Contents of array <musicToPlay> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
 INFO:Xst:1432 - Contents of array <musicToPlay> may be accessed with a negative index, causing simulation mismatch.
 INFO:Xst:1433 - Contents of array <musicToPlay> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <correctSign> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <correctSign> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <musicToPlay> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <musicToPlay> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <correctSign> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <correctSign> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
 INFO:Xst:1432 - Contents of array <musicToPlay> may be accessed with a negative index, causing simulation mismatch.
 INFO:Xst:1433 - Contents of array <musicToPlay> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
 Entity <imageGenerator> analyzed. Unit <imageGenerator> generated.
+
+Analyzing Entity <VGAtxt48x20> in library <work> (Architecture <STRUCTURE>).
+    Set user-defined property "INIT =  0" for instance <XLXI_147_En> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  6" for instance <XLXI_5_Madd_Rd_Address_10_6_add0000_lut_0_Q> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  6" for instance <XLXI_5_Madd_Rd_Address_10_6_add0000_lut_1_Q> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  6" for instance <XLXI_5_Madd_Rd_Address_10_6_add0000_lut_2_Q> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  6" for instance <XLXI_5_Madd_Rd_Address_10_6_add0000_lut_3_Q> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  6" for instance <XLXI_5_Madd_Rd_Address_10_6_add0000_lut_4_Q> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  9009" for instance <XLXI_113_Mcompar_CursorActive_cmp_eq0000_lut_0_Q> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  9009" for instance <XLXI_113_Mcompar_CursorActive_cmp_eq0000_lut_1_Q> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  9009" for instance <XLXI_113_Mcompar_CursorActive_cmp_eq0000_lut_2_Q> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  9009" for instance <XLXI_113_Mcompar_CursorActive_cmp_eq0000_lut_3_Q> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  9009" for instance <XLXI_113_Mcompar_CursorActive_cmp_eq0000_lut_4_Q> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  9" for instance <XLXI_113_Mcompar_CursorActive_cmp_eq0000_lut_5_Q> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_CursorCnt_ScrollBase_4> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_CursorCnt_ScrollBase_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_CursorCnt_ScrollBase_2> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_CursorCnt_ScrollBase_1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_CursorCnt_ScrollBase_0> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_CursorCnt_ColCnt_5> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_CursorCnt_ColCnt_4> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_CursorCnt_ColCnt_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_CursorCnt_ColCnt_2> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_CursorCnt_ColCnt_1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_CursorCnt_ColCnt_0> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_CursorCnt_LineCnt_4> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_CursorCnt_LineCnt_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_CursorCnt_LineCnt_2> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_CursorCnt_LineCnt_1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_CursorCnt_LineCnt_0> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_CursorCnt_State_0> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_cntMod30_4> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_cntMod30_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_cntMod30_2> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_cntMod30_1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_cntMod30_0> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_cntY_9> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_cntY_8> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_cntY_7> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_cntY_6> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_cntY_5> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_cntY_4> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_cntY_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_cntY_2> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_cntY_1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_cntY_0> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_cntX_10> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_cntX_9> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_cntX_8> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_cntX_7> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_cntX_6> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_cntX_5> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_cntX_4> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_cntX_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_cntX_2> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_cntX_1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_cntX_0> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_iLineNo_4> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_iLineNo_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_iLineNo_2> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_iLineNo_1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_iLineNo_0> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_HSync> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  1" for instance <I_ModeCtrl_VActive> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  1" for instance <I_ModeCtrl_HActive> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <I_ModeCtrl_VSync> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_155_ActiveX> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_155_prevDetectY> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_155_prevDetectX> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_155_PixOut> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  1254" for instance <XLXI_115_XLXI_155_Mrom_iPixOut_rom00001> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  6E7E" for instance <XLXI_115_XLXI_155_Mrom_iPixOut_rom00002> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2B92" for instance <XLXI_115_XLXI_155_Mrom_iPixOut_rom00003> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2612" for instance <XLXI_115_XLXI_155_Mrom_iPixOut_rom000011> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  8849" for instance <XLXI_115_XLXI_155_Mrom_iPixOut_rom000012> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  4484" for instance <XLXI_115_XLXI_155_Mrom_iPixOut_rom000013> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0648" for instance <XLXI_115_XLXI_155_Mrom_iPixOut_rom000021> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  3E9D" for instance <XLXI_115_XLXI_155_Mrom_iPixOut_rom000022> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  4984" for instance <XLXI_115_XLXI_155_Mrom_iPixOut_rom000023> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0948" for instance <XLXI_115_XLXI_155_Mrom_iPixOut_rom000031> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  6261" for instance <XLXI_115_XLXI_155_Mrom_iPixOut_rom000032> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  6121" for instance <XLXI_115_XLXI_155_Mrom_iPixOut_rom000033> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  1424" for instance <XLXI_115_XLXI_155_Mrom_iPixOut_rom00004> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  9F72" for instance <XLXI_115_XLXI_155_Mrom_iPixOut_rom000041> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  3192" for instance <XLXI_115_XLXI_155_Mrom_iPixOut_rom000042> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  1" for instance <XLXI_115_XLXI_155_cntLine_0> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_155_cntLine_1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  1" for instance <XLXI_115_XLXI_155_cntLine_2> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_155_cntCol_0> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_155_cntCol_1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_155_cntCol_2> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_155_cntCol_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_155_cntCol_4> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_155_cntCol_5> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_152_Cnt_24> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_152_Cnt_23> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_152_Cnt_22> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_152_Cnt_21> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_152_Cnt_20> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_152_Cnt_19> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_152_Cnt_18> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_152_Cnt_17> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_152_Cnt_16> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_152_Cnt_15> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_152_Cnt_14> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_152_Cnt_13> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_152_Cnt_12> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_152_Cnt_11> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_152_Cnt_10> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_152_Cnt_9> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_152_Cnt_8> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_152_Cnt_7> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_152_Cnt_6> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_152_Cnt_5> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_152_Cnt_4> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_152_Cnt_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_152_Cnt_2> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_152_Cnt_1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_152_Cnt_0> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_147_O> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_151_Q> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_151_O> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  4" for instance <I_CursorCnt_RAM_DI_Out_7_1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  4" for instance <I_CursorCnt_RAM_DI_Out_6_1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  4" for instance <I_CursorCnt_RAM_DI_Out_5_1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  4" for instance <I_CursorCnt_RAM_DI_Out_4_1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  4" for instance <I_CursorCnt_RAM_DI_Out_3_1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  4" for instance <I_CursorCnt_RAM_DI_Out_2_1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  4" for instance <I_CursorCnt_RAM_DI_Out_1_1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  4" for instance <I_CursorCnt_RAM_DI_Out_0_1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  8" for instance <I_ModeCtrl_Active1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  6" for instance <XLXI_115_XLXI_155_Mcount_cntLine_xor_1_11> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  6" for instance <XLXI_115_XLXI_155_Mcount_cntCol_xor_1_11> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  6" for instance <I_ModeCtrl_Mcount_iLineNo_xor_1_11> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  6" for instance <I_ModeCtrl_Mcount_cntMod30_xor_1_11> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  6" for instance <I_CursorCnt_Mcount_ScrollBase_xor_1_11> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  6" for instance <I_CursorCnt_Mcount_ColCnt_xor_1_11> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  6A" for instance <XLXI_115_XLXI_155_Mcount_cntLine_xor_2_11> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  6A" for instance <XLXI_115_XLXI_155_Mcount_cntCol_xor_2_11> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  6A" for instance <I_ModeCtrl_Mcount_iLineNo_xor_2_11> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  6A" for instance <I_ModeCtrl_Mcount_cntMod30_xor_2_11> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  6A" for instance <I_CursorCnt_Mcount_ScrollBase_xor_2_11> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  6A" for instance <I_CursorCnt_Mcount_ColCnt_xor_2_11> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  6AAA" for instance <I_ModeCtrl_Result_3_31> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  6AAA" for instance <I_ModeCtrl_Result_3_1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  6AAA" for instance <I_CursorCnt_Result_3_11> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  6AAA" for instance <I_CursorCnt_Mcount_ColCnt_xor_3_11> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  F7" for instance <XLXI_115_XLXI_155_ActiveX_cmp_eq0000_SW0> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0020" for instance <XLXI_115_XLXI_155_ActiveX_cmp_eq0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  7F" for instance <XLXI_115_XLXI_155_Result_3_11> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  A6" for instance <XLXI_115_XLXI_155_Result_4_1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  A6" for instance <I_CursorCnt_Mcount_ColCnt_xor_5_12> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  CC6C" for instance <XLXI_115_XLXI_155_Result_5_1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  FE" for instance <XLXI_115_XLXI_155_DetectX_cmp_eq0000_inv_SW0> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  FF7F" for instance <XLXI_115_XLXI_155_DetectX_cmp_eq0000_inv> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  E" for instance <I_CursorCnt_ColCnt_or00011> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  F7" for instance <I_ModeCtrl_NewChar_and0000_SW0> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0001" for instance <I_ModeCtrl_NewChar_and0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  FDFF" for instance <I_ModeCtrl_HSync_and0000_SW0> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0002" for instance <I_ModeCtrl_HSync_and0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  FFFD" for instance <I_ModeCtrl_HSync_mux00007> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  EAE2" for instance <I_ModeCtrl_HSync_mux000032> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  EAE2" for instance <I_ModeCtrl_VActive_mux000068> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  FFFE" for instance <I_ModeCtrl_VSync_mux00004> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  FFFD" for instance <I_ModeCtrl_VSync_mux000012> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  7" for instance <I_ModeCtrl_VSync_mux000016> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  AAA8" for instance <I_ModeCtrl_VSync_mux000037> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  4000" for instance <I_ModeCtrl_VSync_mux000054> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  4000" for instance <I_ModeCtrl_VSync_mux000062> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  1" for instance <I_ModeCtrl_VSync_mux000066> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0020" for instance <I_ModeCtrl_iLineNo_cmp_eq00002> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0020" for instance <I_ModeCtrl_iLineNo_cmp_eq00001> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  08" for instance <I_ModeCtrl_HActive_and00001> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  7F" for instance <I_CursorCnt_LineCnt_mux0001_3_11> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  FF7F" for instance <I_ModeCtrl_HActive_mux000012> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  EAE2" for instance <I_ModeCtrl_HActive_mux000051> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  8" for instance <XLXI_115_XLXI_152_Blink1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  80" for instance <XLXI_115_XLXI_155_StartY111> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  80" for instance <I_ModeCtrl_VSync_cmp_eq000021> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  8" for instance <I_ModeCtrl_iLineNo_not00011> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  80" for instance <I_ModeCtrl_iLineNo_and00001> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  F800" for instance <I_ModeCtrl_cntMod30_and00001> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2000" for instance <I_ModeCtrl_VSync_cmp_eq00002> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0001" for instance <I_ModeCtrl_VSync_cmp_eq00001> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0020" for instance <XLXI_115_XLXI_155_ActiveX_and00001120> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  7" for instance <XLXI_113_CursorActive_and0001_SW0> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  FD" for instance <I_CursorCnt_NextState_0_mux000021> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  A3" for instance <I_CursorCnt_LineCnt_mux0001_0_1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  F888" for instance <I_CursorCnt_NextState_0_mux00001> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  AAC3" for instance <I_CursorCnt_LineCnt_mux0001_3_1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  AA3C" for instance <I_CursorCnt_LineCnt_mux0001_1_1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  AA3C" for instance <I_CursorCnt_LineCnt_mux0001_4_Q> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  7" for instance <I_CursorCnt_LineCnt_mux0001_2_SW0> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  AAC3" for instance <I_CursorCnt_LineCnt_mux0001_2_Q> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2064" for instance <I_CursorCnt_LastLine52> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  4" for instance <I_CursorCnt_LastLine5111> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  FDA8" for instance <XLXI_115_XLXI_155_iPixOut103> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_147_Q> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2A" for instance <XLXI_113_CursorActive_and00011> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <I_ModeCtrl_Mcount_cntY_cy_8_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <I_ModeCtrl_Mcount_cntY_cy_7_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <I_ModeCtrl_Mcount_cntY_cy_6_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <I_ModeCtrl_Mcount_cntY_cy_5_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <I_ModeCtrl_Mcount_cntY_cy_4_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <I_ModeCtrl_Mcount_cntY_cy_3_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <I_ModeCtrl_Mcount_cntY_cy_2_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <I_ModeCtrl_Mcount_cntY_cy_1_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <I_ModeCtrl_Mcount_cntX_cy_9_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <I_ModeCtrl_Mcount_cntX_cy_8_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <I_ModeCtrl_Mcount_cntX_cy_7_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <I_ModeCtrl_Mcount_cntX_cy_6_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <I_ModeCtrl_Mcount_cntX_cy_5_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <I_ModeCtrl_Mcount_cntX_cy_4_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <I_ModeCtrl_Mcount_cntX_cy_3_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <I_ModeCtrl_Mcount_cntX_cy_2_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <I_ModeCtrl_Mcount_cntX_cy_1_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <XLXI_115_XLXI_152_Mcount_Cnt_cy_23_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <XLXI_115_XLXI_152_Mcount_Cnt_cy_22_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <XLXI_115_XLXI_152_Mcount_Cnt_cy_21_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <XLXI_115_XLXI_152_Mcount_Cnt_cy_20_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <XLXI_115_XLXI_152_Mcount_Cnt_cy_19_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <XLXI_115_XLXI_152_Mcount_Cnt_cy_18_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <XLXI_115_XLXI_152_Mcount_Cnt_cy_17_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <XLXI_115_XLXI_152_Mcount_Cnt_cy_16_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <XLXI_115_XLXI_152_Mcount_Cnt_cy_15_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <XLXI_115_XLXI_152_Mcount_Cnt_cy_14_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <XLXI_115_XLXI_152_Mcount_Cnt_cy_13_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <XLXI_115_XLXI_152_Mcount_Cnt_cy_12_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <XLXI_115_XLXI_152_Mcount_Cnt_cy_11_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <XLXI_115_XLXI_152_Mcount_Cnt_cy_10_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <XLXI_115_XLXI_152_Mcount_Cnt_cy_9_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <XLXI_115_XLXI_152_Mcount_Cnt_cy_8_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <XLXI_115_XLXI_152_Mcount_Cnt_cy_7_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <XLXI_115_XLXI_152_Mcount_Cnt_cy_6_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <XLXI_115_XLXI_152_Mcount_Cnt_cy_5_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <XLXI_115_XLXI_152_Mcount_Cnt_cy_4_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <XLXI_115_XLXI_152_Mcount_Cnt_cy_3_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <XLXI_115_XLXI_152_Mcount_Cnt_cy_2_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <XLXI_115_XLXI_152_Mcount_Cnt_cy_1_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <I_ModeCtrl_Mcount_cntY_xor_9_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <I_ModeCtrl_Mcount_cntX_xor_10_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  2" for instance <XLXI_115_XLXI_152_Mcount_Cnt_xor_24_rt> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  F69F" for instance <I_CursorCnt_LastLine52_SW1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  9009" for instance <I_CursorCnt_LastLine555_SW0> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  6000" for instance <I_CursorCnt_LastLine555> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  FF80" for instance <I_ModeCtrl_VSync_mux000086> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  F7" for instance <I_ModeCtrl_HActive_mux000017> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0C08" for instance <I_CursorCnt_LastLine580> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  FDFF" for instance <I_CursorCnt_LineCnt_mux0001_2_150_SW0> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  FF75" for instance <I_CursorCnt_LineCnt_mux0001_2_150> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  8000" for instance <XLXI_115_XLXI_155_StartY2> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  80" for instance <XLXI_115_XLXI_155_DetectY_and00001> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  4000" for instance <I_ModeCtrl_HSync_mux000024> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  8000" for instance <I_CursorCnt_LineCnt_mux0001_4_SW0> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  6AAA" for instance <XLXI_115_XLXI_155_Result_3_2> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  FB00" for instance <XLXI_115_XLXI_155_ActiveX_and0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  FEFF" for instance <XLXI_115_XLXI_155_StartY123_SW0> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0080" for instance <XLXI_115_XLXI_155_StartY123> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  BFAE" for instance <I_CursorCnt_ColCnt_or0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  DDDF" for instance <I_CursorCnt_NextState_0_mux000031_SW0> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  00CE" for instance <I_CursorCnt_NextState_0_mux000031> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0E04" for instance <XLXI_115_XLXI_155_iPixOut56_F> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0E04" for instance <XLXI_115_XLXI_155_iPixOut56_G> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INITP_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INITP_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INITP_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INITP_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INITP_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INITP_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INITP_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INITP_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_00 =  0808080808080808080F00000000000000000000000000000000000000000000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_01 =  080808080808080808F8000000000000000000000000000000FF000000000000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_02 =  000000000000000000F80808080808080000000000000000000F080808080808" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_03 =  0808080808080808080F08080808080808080808080808080808080808080808" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_04 =  080808080808080808FF000000000000080808080808080808F8080808080808" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_05 =  080808080808080808FF080808080808000000000000000000FF080808080808" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_06 =  FFFFFFFFFFFFFFFF00000000000000000000000000000000FFFFFFFFFFFFFFFF" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_07 =  0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0FF8F8F8F8F8F8F8F8F8F8F8F8F8F8F8F8" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_08 =  00000000003C00201008040810200000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_09 =  0000004040203C52524A4A3C0402020000000000003C00040810201008040000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_0A =  0000000000003E0008083E080800000000000000000000000000182424180000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_0B =  000000000000482412091224480000000000000000000808003E000808000000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_0C =  000000000000004C32004C320000000000000000000009122448241209000000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_0D =  000000000022222222221C000000000000000000001C22222222220000000000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_0E =  0000000000000010207E2010000000000000000000000008047E040800000000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_0F =  0000000000081C2A080808080808000000000000000808080808082A1C080000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_10 =  0000000000080800080808080808000000000000000000000000000000000000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_11 =  000000000014147F14147F141400000000000000000000000000002424240000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_12 =  000000000002452512082452512000000000000008083E49093E48493E080800" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_13 =  0000000000000000000000080808000000000000003D42454838444438000000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_14 =  0000000010080804040404040808100000000000040808101010101008080400" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_15 =  0000000000000008083E0808000000000000000000000024187E182400000000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_16 =  0000000000000000003E00000000000000000010081818000000000000000000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_17 =  0000000020201010080804040202000000000000001818000000000000000000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_18 =  00000000003E0808080808083808000000000000003C4262725A4E46423C0000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_19 =  00000000003C4202021C0202423C000000000000007E4040403C0202423C0000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_1A =  00000000003C420202027C40407E000000000000000404047E4424140C040000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_1B =  000000000010101008080404427E000000000000003C424242427C40403C0000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_1C =  00000000003C02023E424242423C000000000000003C4242423C4242423C0000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_1D =  0000001008181800001818000000000000000000001818000018180000000000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_1E =  00000000000000003E003E000000000000000000000004081020100804000000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_1F =  000000000008080008080402221C000000000000000020100804081020000000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_20 =  00000000004242427E424242423C000000000000001F204A555549221C000000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_21 =  00000000001E214040404040211E000000000000007C4242427C4242427C0000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_22 =  00000000007E4040407C4040407E000000000000007C424141414141427C0000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_23 =  00000000001E214147404040211E00000000000000404040407C4040407E0000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_24 =  00000000003E080808080808083E00000000000000414141417F414141410000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_25 =  00000000004244485060504844420000000000000038440404040404041E0000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_26 =  0000000000414141414149556341000000000000007E40404040404040400000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_27 =  00000000001C224141414141221C000000000000004141414345495161410000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_28 =  00000003041C224141414141221C00000000000000404040407C4242427C0000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_29 =  00000000003E4101013E4040413E00000000000000424448507C4242427C0000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_2A =  00000000003E41414141414141410000000000000008080808080808087F0000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_2B =  0000000000364949494941414141000000000000000814224141414141410000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_2C =  0000000000080808080814224141000000000000004141221408142241410000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_2D =  000000001C1010101010101010101C0000000000007F402010080402017F0000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_2E =  000000001C0404040404040404041C0000000000020204040808101020200000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_2F =  000000007E000000000000000000000000000000000000000000002214080000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_30 =  00000000003E42423E023C000000000000000000000000000000000408100000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_31 =  00000000003C424040423C000000000000000000007C424242427C4040400000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_32 =  00000000003C42407E423C000000000000000000003E424242423E0202020000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_33 =  00003C02023E424242423E0000000000000000000010101010103C10100E0000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_34 =  00000000003E08080808380008080000000000000042424242427C4040400000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_35 =  00000000004244487048444040400000000038040404040404041C0004040000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_36 =  0000000000494949494976000000000000000000000C10101010101010100000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_37 =  00000000003C424242423C0000000000000000000042424242427C0000000000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_38 =  00000202023E424242423E000000000000004040407C424242427C0000000000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_39 =  00000000003C420C30423C0000000000000000000040404040403C0000000000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_3A =  00000000003E4242424242000000000000000000000C10101010103C10100000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_3B =  0000000000364949494141000000000000000000000814222222220000000000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_3C =  00003C02023E4242424242000000000000000000004224181824420000000000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_3D =  0000000006080808083008080808060000000000007E201008047E0000000000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_3E =  0000000030080808080608080808300000000000000808080808080808080000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_3F =  00000000007E424242424242427E00000000000000000000004C320000000000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "SRVAL =  000" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "WRITE_MODE =  WRITE_FIRST" for instance <XLXI_147_Mrom_DO_rom0000> in unit <VGAtxt48x20>.
+    Set user-defined property "INITP_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INITP_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INITP_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INITP_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INITP_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INITP_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INITP_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INITP_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_08 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_09 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_0B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_0C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_0D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_10 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_11 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_12 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_13 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_14 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_15 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_16 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_17 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_18 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_19 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_1A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_1B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_1C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_1D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_1E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_1F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_20 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_21 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_22 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_23 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_24 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_25 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_26 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_27 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_28 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_29 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_2A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_2B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_2C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_2D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_2E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_2F =  3730303200534A00000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_30 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_31 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_32 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_33 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_34 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_35 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_36 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_37 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_38 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_39 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_3A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_3B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_3C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_3D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_3E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_3F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_A =  000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT_B =  000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "SIM_COLLISION_CHECK =  ALL" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "SRVAL_A =  000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "SRVAL_B =  000" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <XLXI_3> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  FF02" for instance <I_CursorCnt_RAM_WE_Out1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  7FFF" for instance <I_ModeCtrl_Result_4_31> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  8000" for instance <I_ModeCtrl_Result_4_32> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  7FFF" for instance <I_ModeCtrl_Result_4_1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  8000" for instance <I_ModeCtrl_Result_4_2> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  7FFF" for instance <I_CursorCnt_Result_4_11> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  8000" for instance <I_CursorCnt_Result_4_12> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  FF7F" for instance <I_ModeCtrl_VActive_mux0000151> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0002" for instance <I_ModeCtrl_VActive_mux0000531> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  4000" for instance <I_ModeCtrl_cntMod30_cmp_eq00001> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  D" for instance <I_CursorCnt_LineCnt_not000111> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  FF02" for instance <I_CursorCnt_LineCnt_not000112> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  7FFF" for instance <I_CursorCnt_Mcount_ColCnt_xor_4_11> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  8000" for instance <I_CursorCnt_Mcount_ColCnt_xor_4_12> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  D" for instance <I_ModeCtrl_iLineNo_cmp_eq00002_SW0> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  E" for instance <I_ModeCtrl_iLineNo_cmp_eq00001_SW0> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  4000" for instance <XLXI_115_XLXI_155_StartY121> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  FD" for instance <I_ModeCtrl_VSync_cmp_eq00001_SW0> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  4000" for instance <XLXI_115_XLXI_155_ActiveX_and0000117> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  8" for instance <XLXI_115_XLXI_155_ActiveX_and00001111> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  7FFF" for instance <I_CursorCnt_Mcount_ColCnt_xor_5_111> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  9000" for instance <I_CursorCnt_LastLine524> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  4" for instance <I_CursorCnt_LastLine549> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  7FFF" for instance <I_CursorCnt_LineCnt_mux0001_2_123> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  4812" for instance <I_CursorCnt_LastLine52_SW0> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  FAEA" for instance <I_CursorCnt_LineCnt_mux0001_2_179> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0020" for instance <XLXI_115_XLXI_155_iPixOut11> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  40" for instance <I_CursorCnt_LastLine580_SW0> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  80FF" for instance <XLXI_115_XLXI_155_ActiveX_and0000_SW1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  FAFE" for instance <I_CursorCnt_ColCnt_or0000_SW1> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0000" for instance <XLXI_115_XLXI_150_Mshreg_O> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_150_O> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0000" for instance <XLXI_115_XLXI_148_Mshreg_O> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_148_O> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0000" for instance <XLXI_115_XLXI_149_Mshreg_O> in unit <VGAtxt48x20>.
+    Set user-defined property "INIT =  0" for instance <XLXI_115_XLXI_149_O> in unit <VGAtxt48x20>.
+Entity <VGAtxt48x20> analyzed. Unit <VGAtxt48x20> generated.
 
 
 =========================================================================
@@ -188,39 +653,63 @@ Unit <PS2ToNote> synthesized.
 
 Synthesizing Unit <imageGenerator>.
     Related source file is "C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/imageGenerator.vhd".
-WARNING:Xst:1780 - Signal <noteChanged> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1781 - Signal <wrongSign> is used but never assigned. Tied to default value.
 WARNING:Xst:1781 - Signal <musicToPlay> is used but never assigned. Tied to default value.
-    Found finite state machine <FSM_0> for signal <height>.
+WARNING:Xst:1781 - Signal <correctSign> is used but never assigned. Tied to default value.
+    Found finite state machine <FSM_0> for signal <t_state>.
     -----------------------------------------------------------------------
-    | States             | 7                                              |
-    | Transitions        | 9                                              |
-    | Inputs             | 2                                              |
-    | Outputs            | 6                                              |
+    | States             | 3                                              |
+    | Transitions        | 15                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 2                                              |
     | Clock              | Clk                       (rising_edge)        |
     | Power Up State     | 00000000000000000000000000000000               |
     | Encoding           | automatic                                      |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 8x8-bit ROM for signal <$varindex0001> created at line 86.
-    Found 8x8-bit ROM for signal <$varindex0000> created at line 61.
+    Found 9x8-bit ROM for signal <$varindex0002> created at line 104.
+    Found 8x8-bit ROM for signal <$varindex0001> created at line 91.
+    Found 8x8-bit ROM for signal <$varindex0000> created at line 64.
     Found 8-bit register for signal <Char_DI>.
     Found 1-bit register for signal <Char_WE>.
     Found 1-bit register for signal <Goto00>.
     Found 1-bit register for signal <NewLine>.
-    Found 32-bit comparator equal for signal <height$cmp_eq0001> created at line 108.
+    Found 32-bit comparator less for signal <Char_DI$cmp_lt0000> created at line 102.
+    Found 32-bit comparator less for signal <Char_DI$cmp_lt0001> created at line 105.
+    Found 32-bit comparator less for signal <Char_DI$cmp_lt0002> created at line 108.
+    Found 32-bit comparator equal for signal <Char_WE$cmp_eq0005> created at line 166.
+    Found 32-bit register for signal <height>.
+    Found 32-bit adder for signal <height$share0000> created at line 78.
     Found 32-bit up counter for signal <notesCorrect>.
     Found 32-bit up counter for signal <notesWrong>.
-    Found 8-bit comparator equal for signal <notesWrong$cmp_eq0000> created at line 61.
+    Found 8-bit comparator equal for signal <notesWrong$cmp_eq0000> created at line 64.
     Found 32-bit register for signal <width>.
-    Found 32-bit adder for signal <width$share0000> created at line 72.
+    Found 32-bit adder for signal <width$share0000> created at line 78.
     Summary:
 	inferred   1 Finite State Machine(s).
-	inferred   2 ROM(s).
+	inferred   3 ROM(s).
 	inferred   2 Counter(s).
-	inferred  43 D-type flip-flop(s).
-	inferred   1 Adder/Subtractor(s).
-	inferred   2 Comparator(s).
+	inferred  75 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   5 Comparator(s).
 Unit <imageGenerator> synthesized.
+
+
+Synthesizing Unit <VGAtxt48x20>.
+    Related source file is "C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/VGAtxt48x20.vhd".
+WARNING:Xst:646 - Signal <NLW_XLXI_3_DOPB_0_UNCONNECTED> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <NLW_XLXI_3_DOPA_0_UNCONNECTED> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <NLW_XLXI_3_DOB_7_UNCONNECTED> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <NLW_XLXI_3_DOB_6_UNCONNECTED> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <NLW_XLXI_3_DOB_5_UNCONNECTED> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <NLW_XLXI_3_DOB_4_UNCONNECTED> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <NLW_XLXI_3_DOB_3_UNCONNECTED> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <NLW_XLXI_3_DOB_2_UNCONNECTED> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <NLW_XLXI_3_DOB_1_UNCONNECTED> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <NLW_XLXI_3_DOB_0_UNCONNECTED> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <NLW_XLXI_3_DOA_7_UNCONNECTED> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <NLW_XLXI_147_Mrom_DO_rom0000_DOP_0_UNCONNECTED> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <VGAtxt48x20> synthesized.
 
 
 Synthesizing Unit <Main>.
@@ -237,21 +726,23 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 HDL Synthesis Report
 
 Macro Statistics
-# ROMs                                                 : 2
+# ROMs                                                 : 3
  8x8-bit ROM                                           : 2
-# Adders/Subtractors                                   : 1
- 32-bit adder                                          : 1
+ 9x8-bit ROM                                           : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
 # Counters                                             : 3
  12-bit up counter                                     : 1
  32-bit up counter                                     : 1
  4-bit up counter                                      : 1
-# Registers                                            : 9
+# Registers                                            : 10
  1-bit register                                        : 5
- 32-bit register                                       : 1
+ 32-bit register                                       : 2
  8-bit register                                        : 3
-# Comparators                                          : 5
+# Comparators                                          : 8
  13-bit comparator equal                               : 2
  32-bit comparator equal                               : 1
+ 32-bit comparator less                                : 3
  8-bit comparator equal                                : 2
 
 =========================================================================
@@ -261,28 +752,23 @@ Macro Statistics
 =========================================================================
 
 Analyzing FSM <FSM_0> for best encoding.
-Optimizing FSM <XLXI_5/height/FSM> on signal <height[1:7]> with one-hot encoding.
+Optimizing FSM <XLXI_5/t_state/FSM> on signal <t_state[1:2]> with gray encoding.
 ----------------------------------------------
  State                            | Encoding
 ----------------------------------------------
- 00000000000000000000000000000000 | 0000001
- 00000000000000000000000000000001 | 0000010
- 00000000000000000000000000000010 | 0000100
- 00000000000000000000000000000011 | 0001000
- 00000000000000000000000000000100 | 0010000
- 00000000000000000000000000000101 | 0100000
- 00000000000000000000000000000110 | 1000000
+ 00000000000000000000000000000000 | 00
+ 00000000000000000000000000000001 | 01
+ 00000000000000000000000000000010 | 11
 ----------------------------------------------
 Reading core <DACWrite.ngc>.
 Reading core <PS2_Kbd.ngc>.
-Reading core <VGAtxt48x20.ngc>.
 Loading core <DACWrite> for timing and area information for instance <XLXI_1>.
 Loading core <PS2_Kbd> for timing and area information for instance <XLXI_3>.
-Loading core <VGAtxt48x20> for timing and area information for instance <XLXI_6>.
 WARNING:Xst:1710 - FF/Latch <Note_7> (without init value) has a constant value of 0 in block <XLXI_4>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2404 -  FFs/Latches <Note<7:7>> (without init value) have a constant value of 0 in block <PS2ToNote>.
 
 Synthesizing (advanced) Unit <imageGenerator>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom__varindex0002> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
 INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom__varindex0001> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
 Unit <imageGenerator> synthesized (advanced).
 
@@ -291,19 +777,21 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # FSMs                                                 : 1
-# ROMs                                                 : 2
+# ROMs                                                 : 3
  8x8-bit ROM                                           : 2
-# Adders/Subtractors                                   : 1
- 32-bit adder                                          : 1
+ 9x8-bit ROM                                           : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
 # Counters                                             : 3
  12-bit up counter                                     : 1
  32-bit up counter                                     : 1
  4-bit up counter                                      : 1
-# Registers                                            : 60
- Flip-Flops                                            : 60
-# Comparators                                          : 5
+# Registers                                            : 190
+ Flip-Flops                                            : 190
+# Comparators                                          : 8
  13-bit comparator equal                               : 2
  32-bit comparator equal                               : 1
+ 32-bit comparator less                                : 3
  8-bit comparator equal                                : 2
 
 =========================================================================
@@ -324,28 +812,24 @@ Optimizing unit <PS2ToNote> ...
 
 Optimizing unit <imageGenerator> ...
 
+Optimizing unit <VGAtxt48x20> ...
+
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Main, actual ratio is 6.
+Found area constraint ratio of 100 (+ 5) on block Main, actual ratio is 8.
 FlipFlop XLXI_4/Note_0 has been replicated 1 time(s)
 FlipFlop XLXI_4/Note_1 has been replicated 1 time(s)
 FlipFlop XLXI_4/Note_2 has been replicated 1 time(s)
-FlipFlop XLXI_4/Note_4 has been replicated 1 time(s)
+FlipFlop XLXI_4/Note_5 has been replicated 1 time(s)
 
 Final Macro Processing ...
-
-Processing Unit <Main> :
-	Found 2-bit shift register for signal <XLXI_5/height_FSM_FFd3>.
-Unit <Main> processed.
 
 =========================================================================
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 113
- Flip-Flops                                            : 113
-# Shift Registers                                      : 1
- 2-bit shift register                                  : 1
+# Registers                                            : 240
+ Flip-Flops                                            : 240
 
 =========================================================================
 
@@ -374,44 +858,44 @@ Design Statistics
 # IOs                              : 18
 
 Cell Usage :
-# BELS                             : 894
+# BELS                             : 1169
 #      AND2                        : 1
 #      AND3                        : 4
 #      AND3B1                      : 4
 #      BUF                         : 3
-#      GND                         : 4
-#      INV                         : 22
-#      LUT1                        : 122
-#      LUT2                        : 55
-#      LUT2_D                      : 1
-#      LUT2_L                      : 6
-#      LUT3                        : 72
-#      LUT3_D                      : 4
+#      GND                         : 3
+#      INV                         : 28
+#      LUT1                        : 157
+#      LUT2                        : 60
+#      LUT2_D                      : 3
+#      LUT2_L                      : 7
+#      LUT3                        : 88
+#      LUT3_D                      : 9
 #      LUT3_L                      : 3
-#      LUT4                        : 221
-#      LUT4_D                      : 12
-#      LUT4_L                      : 18
-#      MUXCY                       : 163
-#      MUXF5                       : 27
+#      LUT4                        : 310
+#      LUT4_D                      : 17
+#      LUT4_L                      : 21
+#      MUXCY                       : 232
+#      MUXF5                       : 36
 #      MUXF5_L                     : 2
 #      MUXF6                       : 6
 #      OR2                         : 5
-#      VCC                         : 4
+#      VCC                         : 3
 #      XOR2                        : 1
-#      XORCY                       : 134
-# FlipFlops/Latches                : 304
-#      FD                          : 101
+#      XORCY                       : 166
+# FlipFlops/Latches                : 332
+#      FD                          : 127
 #      FDE                         : 112
 #      FDR                         : 33
 #      FDRE                        : 48
 #      FDRSE                       : 2
-#      FDS                         : 4
-#      FDSE                        : 4
+#      FDS                         : 9
+#      FDSE                        : 1
 # RAMS                             : 2
 #      RAMB16_S9                   : 1
 #      RAMB16_S9_S9                : 1
-# Shift Registers                  : 4
-#      SRL16                       : 4
+# Shift Registers                  : 3
+#      SRL16                       : 3
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGP                       : 1
@@ -425,11 +909,11 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                      311  out of   4656     6%  
- Number of Slice Flip Flops:            304  out of   9312     3%  
- Number of 4 input LUTs:                540  out of   9312     5%  
-    Number used as logic:               536
-    Number used as Shift registers:       4
+ Number of Slices:                      400  out of   4656     8%  
+ Number of Slice Flip Flops:            332  out of   9312     3%  
+ Number of 4 input LUTs:                706  out of   9312     7%  
+    Number used as logic:               703
+    Number used as Shift registers:       3
  Number of IOs:                          18
  Number of bonded IOBs:                  18  out of    232     7%  
  Number of BRAMs:                         2  out of     20    10%  
@@ -456,7 +940,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-Clk                                | BUFGP                  | 279   |
+Clk                                | BUFGP                  | 306   |
 XLXI_4/Note_Rdy1                   | BUFG                   | 31    |
 -----------------------------------+------------------------+-------+
 
@@ -468,10 +952,10 @@ Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 10.018ns (Maximum Frequency: 99.820MHz)
+   Minimum period: 9.939ns (Maximum Frequency: 100.614MHz)
    Minimum input arrival time before clock: 3.980ns
    Maximum output required time after clock: 5.620ns
-   Maximum combinational path delay: 7.194ns
+   Maximum combinational path delay: 7.202ns
 
 Timing Detail:
 --------------
@@ -479,10 +963,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Clk'
-  Clock period: 10.018ns (frequency: 99.820MHz)
-  Total number of paths / destination ports: 13431 / 522
+  Clock period: 9.939ns (frequency: 100.614MHz)
+  Total number of paths / destination ports: 27114 / 551
 -------------------------------------------------------------------------
-Delay:               10.018ns (Levels of Logic = 11)
+Delay:               9.939ns (Levels of Logic = 11)
   Source:            XLXI_4/Note_6 (FF)
   Destination:       XLXI_2/counterSchodki_3 (FF)
   Source Clock:      Clk rising
@@ -492,8 +976,8 @@ Delay:               10.018ns (Levels of Logic = 11)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             18   0.591   1.243  XLXI_4/Note_6 (XLXI_4/Note_6)
-     LUT2_D:I0->LO         1   0.704   0.104  XLXI_2/frequency<9>1211 (N116)
+     FDE:C->Q             19   0.591   1.164  XLXI_4/Note_6 (XLXI_4/Note_6)
+     LUT2_D:I1->LO         1   0.704   0.104  XLXI_2/frequency<9>1211 (N190)
      LUT4:I3->O            3   0.704   0.535  XLXI_2/frequency<0>31 (XLXI_2/N19)
      LUT4:I3->O            1   0.704   0.424  XLXI_2/frequency<0> (XLXI_2/frequency<0>)
      LUT4:I3->O            1   0.704   0.000  XLXI_2/Mcompar_Start_or0000_lut<1> (XLXI_2/Mcompar_Start_or0000_lut<1>)
@@ -506,15 +990,15 @@ Delay:               10.018ns (Levels of Logic = 11)
      LUT4:I3->O            4   0.704   0.587  XLXI_2/counterSchodki_and0000 (XLXI_2/counterSchodki_and0000)
      FDRE:R                    0.911          XLXI_2/counterSchodki_0
     ----------------------------------------
-    Total                     10.018ns (6.053ns logic, 3.965ns route)
-                                       (60.4% logic, 39.6% route)
+    Total                      9.939ns (6.053ns logic, 3.886ns route)
+                                       (60.9% logic, 39.1% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'XLXI_4/Note_Rdy1'
-  Clock period: 7.601ns (frequency: 131.563MHz)
-  Total number of paths / destination ports: 682 / 62
+  Clock period: 6.035ns (frequency: 165.703MHz)
+  Total number of paths / destination ports: 620 / 62
 -------------------------------------------------------------------------
-Delay:               7.601ns (Levels of Logic = 5)
+Delay:               6.035ns (Levels of Logic = 4)
   Source:            XLXI_5/notesCorrect_2 (FF)
   Destination:       XLXI_5/notesCorrect_30 (FF)
   Source Clock:      XLXI_4/Note_Rdy1 rising
@@ -524,16 +1008,15 @@ Delay:               7.601ns (Levels of Logic = 5)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              4   0.591   0.762  XLXI_5/notesCorrect_2 (XLXI_5/notesCorrect_2)
-     LUT3:I0->O            1   0.704   0.595  XLXI_5/notesWrong_cmp_eq0000849 (XLXI_5/notesWrong_cmp_eq0000849)
-     LUT3:I0->O            1   0.704   0.000  XLXI_5/notesWrong_cmp_eq00008105_F (N103)
-     MUXF5:I0->O           1   0.321   0.595  XLXI_5/notesWrong_cmp_eq00008105 (XLXI_5/notesWrong_cmp_eq00008105)
-     LUT3_L:I0->LO         1   0.704   0.104  XLXI_5/notesWrong_cmp_eq00008153_SW0 (N101)
-     LUT4:I3->O           31   0.704   1.262  XLXI_5/notesWrong_cmp_eq00008153 (XLXI_5/notesWrong_cmp_eq0000)
+     FDE:C->Q              4   0.591   0.666  XLXI_5/notesCorrect_2 (XLXI_5/notesCorrect_2)
+     LUT3_L:I1->LO         1   0.704   0.104  XLXI_5/notesWrong_cmp_eq000048_SW0 (N153)
+     LUT4:I3->O            1   0.704   0.424  XLXI_5/notesWrong_cmp_eq000048 (XLXI_5/notesWrong_cmp_eq000048)
+     LUT4:I3->O            1   0.704   0.000  XLXI_5/notesWrong_cmp_eq0000230_F (N169)
+     MUXF5:I0->O          31   0.321   1.262  XLXI_5/notesWrong_cmp_eq0000230 (XLXI_5/notesWrong_cmp_eq0000)
      FDE:CE                    0.555          XLXI_5/notesCorrect_0
     ----------------------------------------
-    Total                      7.601ns (4.283ns logic, 3.318ns route)
-                                       (56.3% logic, 43.7% route)
+    Total                      6.035ns (3.579ns logic, 2.456ns route)
+                                       (59.3% logic, 40.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
@@ -582,7 +1065,7 @@ Offset:              5.620ns (Levels of Logic = 3)
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Delay:               7.194ns (Levels of Logic = 4)
+Delay:               7.202ns (Levels of Logic = 4)
   Source:            Clk (PAD)
   Destination:       SPI_SCK (PAD)
 
@@ -590,26 +1073,26 @@ Delay:               7.194ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     BUFGP:I->O          281   1.457   1.341  Clk_BUFGP (Clk_BUFGP)
+     BUFGP:I->O          308   1.457   1.349  Clk_BUFGP (Clk_BUFGP)
      begin scope: 'XLXI_1'
      INV:I->O              1   0.704   0.420  SPI_SCK1_INV_0 (SPI_SCK)
      end scope: 'XLXI_1'
      OBUF:I->O                 3.272          SPI_SCK_OBUF (SPI_SCK)
     ----------------------------------------
-    Total                      7.194ns (5.433ns logic, 1.761ns route)
-                                       (75.5% logic, 24.5% route)
+    Total                      7.202ns (5.433ns logic, 1.769ns route)
+                                       (75.4% logic, 24.6% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.06 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.57 secs
  
 --> 
 
-Total memory usage is 4531628 kilobytes
+Total memory usage is 4547840 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   17 (   0 filtered)
-Number of infos    :    8 (   0 filtered)
+Number of warnings :   29 (   0 filtered)
+Number of infos    :   15 (   0 filtered)
 

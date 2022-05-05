@@ -24,3 +24,27 @@ vhdtdtfi -lib work imageGenerator.vhd -prj UCISW2_organek -o imageGenerator.spl 
 spl2sym -intstyle ise -family spartan3e imageGenerator.spl C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/imageGenerator.sym 
 vhdtdtfi -lib work imageGenerator.vhd -prj UCISW2_organek -o imageGenerator.spl -module imageGenerator -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
 spl2sym -intstyle ise -family spartan3e imageGenerator.spl C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/imageGenerator.sym 
+vhdtdtfi -lib work imageGenerator.vhd -prj UCISW2_organek -o imageGenerator.spl -module imageGenerator -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e imageGenerator.spl C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/imageGenerator.sym 
+vhdtdtfi -lib work imageGenerator.vhd -prj UCISW2_organek -o imageGenerator.spl -module imageGenerator -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e imageGenerator.spl C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/imageGenerator.sym 
+vhdtdtfi -lib work imageGenerator.vhd -prj UCISW2_organek -o imageGenerator.spl -module imageGenerator -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e imageGenerator.spl C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/imageGenerator.sym 
+vhdtdtfi -lib work imageGenerator.vhd -prj UCISW2_organek -o imageGenerator.spl -module imageGenerator -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e imageGenerator.spl C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/imageGenerator.sym 
+vhdtdtfi -lib work imageGenerator.vhd -prj UCISW2_organek -o imageGenerator.spl -module imageGenerator -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e imageGenerator.spl C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/imageGenerator.sym 
+vhdtdtfi -lib work imageGenerator.vhd -prj UCISW2_organek -o imageGenerator.spl -module imageGenerator -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e imageGenerator.spl C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/imageGenerator.sym 
+vhdtdtfi -lib work imageGenerator.vhd -prj UCISW2_organek -o imageGenerator.spl -module imageGenerator -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e imageGenerator.spl C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/imageGenerator.sym 
+vhdtdtfi -lib work imageGenerator.vhd -prj UCISW2_organek -o imageGenerator.spl -module imageGenerator -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e imageGenerator.spl C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/imageGenerator.sym 
+vhdtdtfi -lib work imageGenerator.vhd -prj UCISW2_organek -o imageGenerator.spl -module imageGenerator -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e imageGenerator.spl C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/imageGenerator.sym 
+vhdtdtfi -lib work imageGenerator.vhd -prj UCISW2_organek -o imageGenerator.spl -module imageGenerator -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e imageGenerator.spl C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/imageGenerator.sym 
+vhdtdtfi -lib work imageGenerator.vhd -prj UCISW2_organek -o imageGenerator.spl -module imageGenerator -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e imageGenerator.spl C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/imageGenerator.sym 
+vhdtdtfi -lib work imageGenerator.vhd -prj UCISW2_organek -o imageGenerator.spl -module imageGenerator -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e imageGenerator.spl C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/imageGenerator.sym 

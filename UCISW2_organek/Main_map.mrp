@@ -9,24 +9,24 @@ Target Device  : xc3s500e
 Target Package : fg320
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Wed Apr 13 19:22:14 2022
+Mapped Date    : Thu May 05 19:32:49 2022
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    0
 Logic Utilization:
-  Number of Slice Flip Flops:           277 out of   9,312    2%
-  Number of 4 input LUTs:               379 out of   9,312    4%
+  Number of Slice Flip Flops:           305 out of   9,312    3%
+  Number of 4 input LUTs:               511 out of   9,312    5%
 Logic Distribution:
-  Number of occupied Slices:            305 out of   4,656    6%
-    Number of Slices containing only related logic:     305 out of     305 100%
-    Number of Slices containing unrelated logic:          0 out of     305   0%
+  Number of occupied Slices:            390 out of   4,656    8%
+    Number of Slices containing only related logic:     390 out of     390 100%
+    Number of Slices containing unrelated logic:          0 out of     390   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         507 out of   9,312    5%
-    Number used as logic:               375
-    Number used as a route-thru:        128
-    Number used as Shift registers:       4
+  Total Number of 4 input LUTs:         674 out of   9,312    7%
+    Number used as logic:               508
+    Number used as a route-thru:        163
+    Number used as Shift registers:       3
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
@@ -35,7 +35,7 @@ Logic Distribution:
   Number of RAMB16s:                      2 out of      20   10%
   Number of BUFGMUXs:                     2 out of      24    8%
 
-Average Fanout of Non-Clock Nets:                3.02
+Average Fanout of Non-Clock Nets:                3.13
 
 Peak Memory Usage:  4420 MB
 Total REAL time to MAP completion:  1 secs 
@@ -95,7 +95,7 @@ INFO:MapLib:159 - Net Timing constraints on signal Clk are pushed forward
 Section 4 - Removed Logic Summary
 ---------------------------------
   17 block(s) removed
-  55 block(s) optimized away
+  52 block(s) optimized away
   25 signal(s) removed
 
 Section 5 - Removed Logic
@@ -128,34 +128,39 @@ The signal "XLXI_1/ResBusy/qBusyExt" is sourceless and has been removed.
      Sourceless block "XLXI_1/ResBusy/BusyExt" (SFF) removed.
 The signal "XLXI_1/ResBusy/qBusyInt" is sourceless and has been removed.
  Sourceless block "XLXI_1/ResBusy/qBusyExt" (FF) removed.
-The signal "XLXI_6/I_CursorCnt/Result<4>1" is sourceless and has been removed.
-The signal "XLXI_6/I_CursorCnt/Result<3>1" is sourceless and has been removed.
-The signal "XLXI_6/I_CursorCnt/Result<2>1" is sourceless and has been removed.
-The signal "XLXI_6/I_CursorCnt/Result<1>1" is sourceless and has been removed.
-The signal "XLXI_6/I_CursorCnt/Result<0>1" is sourceless and has been removed.
-The signal "XLXI_6/N38" is sourceless and has been removed.
- Sourceless block "XLXI_6/I_CursorCnt/LastLine52" (ROM) removed.
-  The signal "XLXI_6/I_CursorCnt/N5" is sourceless and has been removed.
-The signal "XLXI_6/N46" is sourceless and has been removed.
-The signal "XLXI_6/I_CursorCnt/Result<4>11" is sourceless and has been removed.
- Sourceless block "XLXI_6/I_CursorCnt/Result<4>1_f5" (MUX) removed.
-The signal "XLXI_6/I_CursorCnt/Result<4>12" is sourceless and has been removed.
-The signal "XLXI_6/I_CursorCnt/LineCnt_mux0001<2>123/O" is sourceless and has
-been removed.
-The signal "XLXI_6/I_CursorCnt/LastLine52_SW0/O" is sourceless and has been
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "XLXI_6/I_CursorCnt_N5" is unused and has been removed.
+ Unused block "XLXI_6/I_CursorCnt_LastLine52" (ROM) removed.
+  The signal "XLXI_6/N38" is unused and has been removed.
+   Unused block "XLXI_6/I_CursorCnt_LastLine52_SW1" (ROM) removed.
+The signal "XLXI_6/I_CursorCnt_Result_0_1" is unused and has been removed.
+ Unused block "XLXI_6/I_CursorCnt_Mcount_ScrollBase_xor_0_11_INV_0" (BUF)
 removed.
+The signal "XLXI_6/I_CursorCnt_Result_1_1" is unused and has been removed.
+ Unused block "XLXI_6/I_CursorCnt_Mcount_ScrollBase_xor_1_11" (ROM) removed.
+The signal "XLXI_6/I_CursorCnt_Result_2_1" is unused and has been removed.
+ Unused block "XLXI_6/I_CursorCnt_Mcount_ScrollBase_xor_2_11" (ROM) removed.
+The signal "XLXI_6/I_CursorCnt_Result_3_1" is unused and has been removed.
+ Unused block "XLXI_6/I_CursorCnt_Result_3_11" (ROM) removed.
+The signal "XLXI_6/I_CursorCnt_Result_4_1" is unused and has been removed.
+ Unused block "XLXI_6/I_CursorCnt_Result_4_1_f5" (MUX) removed.
+  The signal "XLXI_6/I_CursorCnt_Result_4_12_109" is unused and has been removed.
+   Unused block "XLXI_6/I_CursorCnt_Result_4_12" (ROM) removed.
+  The signal "XLXI_6/I_CursorCnt_Result_4_11_108" is unused and has been removed.
+   Unused block "XLXI_6/I_CursorCnt_Result_4_11" (ROM) removed.
+The signal "XLXI_6/N46" is unused and has been removed.
+ Unused block "XLXI_6/I_CursorCnt_LineCnt_mux0001_2_150_SW0" (ROM) removed.
+The signal "XLXI_6/I_CursorCnt_LastLine52_SW0/O" is unused and has been removed.
+ Unused block "XLXI_6/I_CursorCnt_LastLine52_SW0" (ROM) removed.
+The signal "XLXI_6/I_CursorCnt_LineCnt_mux0001_2_123/O" is unused and has been
+removed.
+ Unused block "XLXI_6/I_CursorCnt_LineCnt_mux0001_2_123" (ROM) removed.
 Unused block "XLXI_1/ResBusy/qBusyInt" (FF) removed.
-Unused block "XLXI_6/I_CursorCnt/LastLine52_SW0" (ROM) removed.
-Unused block "XLXI_6/I_CursorCnt/LastLine52_SW1" (ROM) removed.
-Unused block "XLXI_6/I_CursorCnt/LineCnt_mux0001<2>123" (ROM) removed.
-Unused block "XLXI_6/I_CursorCnt/LineCnt_mux0001<2>150_SW0" (ROM) removed.
-Unused block "XLXI_6/I_CursorCnt/Mcount_ScrollBase_xor<0>11_INV_0" (BUF)
-removed.
-Unused block "XLXI_6/I_CursorCnt/Mcount_ScrollBase_xor<1>11" (ROM) removed.
-Unused block "XLXI_6/I_CursorCnt/Mcount_ScrollBase_xor<2>11" (ROM) removed.
-Unused block "XLXI_6/I_CursorCnt/Result<3>11" (ROM) removed.
-Unused block "XLXI_6/I_CursorCnt/Result<4>11" (ROM) removed.
-Unused block "XLXI_6/I_CursorCnt/Result<4>12" (ROM) removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
@@ -215,40 +220,38 @@ LUT3 		XLXI_1/regPISO_mux0000<7>1
    optimized to 0
 GND 		XLXI_3/XST_GND
 VCC 		XLXI_3/XST_VCC
-LUT2 		XLXI_6/I_CursorCnt/LastLine5111
+LUT2 		XLXI_6/I_CursorCnt_LastLine5111
    optimized to 0
-LUT4_D 		XLXI_6/I_CursorCnt/LastLine524
+LUT4_D 		XLXI_6/I_CursorCnt_LastLine524
    optimized to 0
-LOCALBUF 		XLXI_6/I_CursorCnt/LastLine524/LUT4_D_BUF
-LUT3_L 		XLXI_6/I_CursorCnt/LastLine580_SW0
+LOCALBUF 		XLXI_6/I_CursorCnt_LastLine524/LUT4_D_BUF
+LUT3_L 		XLXI_6/I_CursorCnt_LastLine580_SW0
    optimized to 0
-LOCALBUF 		XLXI_6/I_CursorCnt/LastLine580_SW0/LUT3_L_BUF
-LUT4 		XLXI_6/I_CursorCnt/LineCnt_mux0001<2>150
+LOCALBUF 		XLXI_6/I_CursorCnt_LastLine580_SW0/LUT3_L_BUF
+LUT4 		XLXI_6/I_CursorCnt_LineCnt_mux0001_2_150
    optimized to 1
-LUT4 		XLXI_6/I_CursorCnt/NextState_0_mux000031
+LUT4 		XLXI_6/I_CursorCnt_NextState_0_mux000031
    optimized to 0
-LUT4 		XLXI_6/I_CursorCnt/NextState_0_mux000031_SW0
+LUT4 		XLXI_6/I_CursorCnt_NextState_0_mux000031_SW0
    optimized to 1
-LUT2 		XLXI_6/I_CursorCnt/RAM_DI_Out<3>1
+LUT2 		XLXI_6/I_CursorCnt_RAM_DI_Out_3_1
    optimized to 0
-LUT2 		XLXI_6/I_CursorCnt/RAM_DI_Out<5>1
+LUT2 		XLXI_6/I_CursorCnt_RAM_DI_Out_5_1
    optimized to 0
-LUT2 		XLXI_6/I_CursorCnt/RAM_DI_Out<7>1
+LUT2 		XLXI_6/I_CursorCnt_RAM_DI_Out_7_1
    optimized to 0
-FDE 		XLXI_6/I_CursorCnt/ScrollBase_0
+FDE 		XLXI_6/I_CursorCnt_ScrollBase_0
    optimized to 0
-FDE 		XLXI_6/I_CursorCnt/ScrollBase_1
+FDE 		XLXI_6/I_CursorCnt_ScrollBase_1
    optimized to 0
-FDE 		XLXI_6/I_CursorCnt/ScrollBase_2
+FDE 		XLXI_6/I_CursorCnt_ScrollBase_2
    optimized to 0
-FDE 		XLXI_6/I_CursorCnt/ScrollBase_3
+FDE 		XLXI_6/I_CursorCnt_ScrollBase_3
    optimized to 0
-FDE 		XLXI_6/I_CursorCnt/ScrollBase_4
+FDE 		XLXI_6/I_CursorCnt_ScrollBase_4
    optimized to 0
-LUT2 		XLXI_6/XLXI_113/CursorActive_and0001_SW0
+LUT2 		XLXI_6/XLXI_113_CursorActive_and0001_SW0
    optimized to 1
-GND 		XLXI_6/XLXI_141
-VCC 		XLXI_6/XLXI_93
 GND 		XST_GND
 VCC 		XST_VCC
 

@@ -11,8 +11,6 @@ Loading design module
 "C:\Users\lab\Documents\GitHub\UCISW2project\UCISW2_organek/DACWrite.ngc"...
 Loading design module
 "C:\Users\lab\Documents\GitHub\UCISW2project\UCISW2_organek/PS2_Kbd.ngc"...
-Loading design module
-"C:\Users\lab\Documents\GitHub\UCISW2project\UCISW2_organek/VGAtxt48x20.ngc"...
 Gathering constraint information from source properties...
 Done.
 
@@ -38,7 +36,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 4398136 kilobytes
+Total memory usage is 4398084 kilobytes
 
 Writing NGD file "Main.ngd" ...
 Total REAL time to NGDBUILD completion:  2 sec

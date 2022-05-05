@@ -1,36 +1,46 @@
-V3 24
+V3 56
 FL /home/superciuper/Documents/UCISW2project/UCISW2_organek/frequencyGenerator.vhd 2022/05/04.08:00:16 P.20131013
-EN work/frequencyGenerator 1651684542 \
-      FL /home/superciuper/Documents/UCISW2project/UCISW2_organek/frequencyGenerator.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/frequencyGenerator/Behavioral 1651684543 \
-      FL /home/superciuper/Documents/UCISW2project/UCISW2_organek/frequencyGenerator.vhd \
-      EN work/frequencyGenerator 1651684542
 FL C:/Users/lab/Desktop/UCISW2project-main/UCISW2_organek/frequencyGenerator.vhd 2022/04/07.16:44:11 P.20131013
 FL C:/Users/lab/Desktop/UCISW2project-main/UCISW2_organek/Main.vhf 2022/04/07.17:44:26 P.20131013
 FL C:/Users/lab/Desktop/UCISW2project-main/UCISW2_organek/PS2ToNote.vhd 2022/04/07.17:21:52 P.20131013
-FL C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/frequencyGenerator.vhd 2022/04/13.17:24:25 P.20131013
-FL C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/imageGenerator.vhd 2022/04/13.19:21:23 P.20131013
-EN work/imageGenerator 1649870527 \
+FL C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/frequencyGenerator.vhd 2022/05/05.16:46:28 P.20131013
+EN work/frequencyGenerator 1651771954 \
+      FL C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/frequencyGenerator.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/frequencyGenerator/Behavioral 1651771955 \
+      FL C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/frequencyGenerator.vhd \
+      EN work/frequencyGenerator 1651771954
+FL C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/imageGenerator.vhd 2022/05/05.19:31:53 P.20131013
+EN work/imageGenerator 1651771958 \
       FL C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/imageGenerator.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/imageGenerator/Behavioral 1649870528 \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/imageGenerator/Behavioral 1651771959 \
       FL C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/imageGenerator.vhd \
-      EN work/imageGenerator 1649870527
-FL C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/Main.vhf 2022/04/13.19:22:00 P.20131013
-EN work/Main 1649870529 \
+      EN work/imageGenerator 1651771958
+FL C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/Main.vhf 2022/05/05.19:32:31 P.20131013
+EN work/Main 1651771962 \
       FL C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/Main.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Main/BEHAVIORAL 1649870530 \
+AR work/Main/BEHAVIORAL 1651771963 \
       FL C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/Main.vhf \
-      EN work/Main 1649870529 CP DACWrite CP frequencyGenerator CP PS2_Kbd \
+      EN work/Main 1651771962 CP DACWrite CP frequencyGenerator CP PS2_Kbd \
       CP PS2ToNote CP imageGenerator CP VGAtxt48x20 CP BUF
-FL C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/PS2ToNote.vhd 2022/04/13.17:57:06 P.20131013
-EN work/PS2ToNote 1649870525 \
+FL C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/PS2ToNote.vhd 2022/05/05.16:46:28 P.20131013
+EN work/PS2ToNote 1651771956 \
       FL C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/PS2ToNote.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/PS2ToNote/Behavioral 1649870526 \
+AR work/PS2ToNote/Behavioral 1651771957 \
       FL C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/PS2ToNote.vhd \
-      EN work/PS2ToNote 1649870525
+      EN work/PS2ToNote 1651771956
+FL C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/VGAtxt48x20.vhd 2022/05/05.19:08:46 P.20131013
+EN work/VGAtxt48x20 1651771960 \
+      FL C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/VGAtxt48x20.vhd \
+      PB ieee/std_logic_1164 1381692176 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/VGAtxt48x20/STRUCTURE 1651771961 \
+      FL C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/VGAtxt48x20.vhd \
+      EN work/VGAtxt48x20 1651771960 CP FD CP LUT2 CP MUXCY CP XORCY CP LUT4 CP VCC \
+      CP OR2 CP GND CP FDE CP FDRE CP FDR CP FDSE CP MUXF5 CP MUXF6 CP AND2 CP XOR2 \
+      CP LUT3 CP LUT1 CP INV CP RAMB16_S9 CP RAMB16_S9_S9 CP LUT2_L CP LUT4_L CP LUT3_L \
+      CP LUT4_D CP SRL16 CP MUXF5_L CP AND3B1 CP AND3

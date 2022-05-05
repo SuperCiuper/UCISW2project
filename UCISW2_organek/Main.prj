@@ -1,3 +1,4 @@
+vhdl work "VGAtxt48x20.vhd"
 vhdl work "PS2ToNote.vhd"
 vhdl work "imageGenerator.vhd"
 vhdl work "frequencyGenerator.vhd"

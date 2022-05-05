@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
 
@@ -19,17 +19,23 @@ Total CPU time to Xst completion: 0.09 secs
 =========================================================================
 Compiling vhdl file "C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/imageGenerator.vhd" in Library work.
 Entity <imagegenerator> compiled.
-Entity <imagegenerator> (Architecture <behavioral>) compiled.
+ERROR:HDLParsers:164 - "C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/imageGenerator.vhd" Line 52. parse error, unexpected ARRAY, expecting IDENTIFIER or STRING_LITERAL
+ERROR:HDLParsers:164 - "C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/imageGenerator.vhd" Line 53. parse error, unexpected ARRAY, expecting IDENTIFIER or STRING_LITERAL
+ERROR:HDLParsers:3312 - "C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/imageGenerator.vhd" Line 101. Undefined symbol 'correctSign'.
+ERROR:HDLParsers:1209 - "C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/imageGenerator.vhd" Line 101. correctSign: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/imageGenerator.vhd" Line 107. Undefined symbol 'wrongSign'.
+ERROR:HDLParsers:1209 - "C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/imageGenerator.vhd" Line 107. wrongSign: Undefined symbol (last report in this block)
+ERROR:HDLParsers:800 - "C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/imageGenerator.vhd" Line 131. Type of height is incompatible with type of '0'.
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> 
 
-Total memory usage is 4468964 kilobytes
+Total memory usage is 4469012 kilobytes
 
-Number of errors   :    0 (   0 filtered)
+Number of errors   :    7 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 
