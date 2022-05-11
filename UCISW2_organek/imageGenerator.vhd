@@ -1,33 +1,6 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date:    22:40:28 04/12/2022 
--- Design Name: 
--- Module Name:    imageGenerator - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
 use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity imageGenerator is
     Port ( Clk : in STD_LOGIC;
@@ -49,8 +22,8 @@ architecture Behavioral of imageGenerator is
 	type arrayOfChars is array (0 to 7) of std_logic_vector (7 downto 0);
 	type arrayOfChars9 is array (0 to 8) of std_logic_vector (7 downto 0);
 	signal musicToPlay : arrayOfChars := ( X"51", X"00", X"57", X"00", X"45", X"00", X"52", X"00" );
-	signal correctSign : arrayOfChars9 := ( X"00", X"51", X"51", X"57", X"51", X"45", X"00", X"52", X"00" );
-	signal wrongSign : arrayOfChars := ( X"51", X"00", X"57", X"00", X"45", X"51", X"52", X"51" );
+	signal correctSign : arrayOfChars9 := (X"21", X"44", X"2D", X"2D", X"24", X"21", X"2C");
+	signal wrongSign : arrayOfChars := (X"1D", X"2D", X"44", X"31", X"34");
 	signal width : integer := 0;
 	signal height : integer := 0;
 	signal t_state : integer := 0;
@@ -175,7 +148,9 @@ begin
 								Goto00 <= '1';
 								height <= 0;
 								t_state <= 1;
+								
 						end case;
+						
 					when others =>
 						if(Note_rdy = '1') then
 							t_state <= 2;
