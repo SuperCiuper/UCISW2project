@@ -1,0 +1,5 @@
+set -tmpdir "/home/daria/Documents/GitHub/UCISW2project/UCISW2_organek/xst/projnav.tmp"
+set -xsthdpdir "/home/daria/Documents/GitHub/UCISW2project/UCISW2_organek/xst"
+elaborate
+-ifn PS2ToNote.prj
+-ifmt mixed

@@ -24,7 +24,7 @@ use IEEE.NUMERIC_STD.ALL;
 entity VGAscan is
     Generic (
          -- Output file (frame number & ".bmp" will be appended)
-         FileName   : string := "D:/Frame";
+         FileName   : string := "/home/daria/Documents";
          -- VGA mode params (defaults are for 800x600@72Hz or VGAtxt48x20)
          pxWidth    : integer := 800;         -- visible pixels: width
          pxHeight   : integer := 600;         -- visible pixels: height

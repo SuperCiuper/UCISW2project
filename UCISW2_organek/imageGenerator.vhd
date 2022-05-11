@@ -20,10 +20,11 @@ architecture Behavioral of imageGenerator is
 	signal notesCorrect : integer := 0;
 	signal notesWrong : integer := 0;
 	type arrayOfChars is array (0 to 7) of std_logic_vector (7 downto 0);
-	type arrayOfChars9 is array (0 to 8) of std_logic_vector (7 downto 0);
-	signal musicToPlay : arrayOfChars := ( X"51", X"00", X"57", X"00", X"45", X"00", X"52", X"00" );
-	signal correctSign : arrayOfChars9 := (X"21", X"44", X"2D", X"2D", X"24", X"21", X"2C");
-	signal wrongSign : arrayOfChars := (X"1D", X"2D", X"44", X"31", X"34");
+	type arrayOfChars7 is array (0 to 6) of std_logic_vector (7 downto 0);
+	type arrayOfChars5 is array (0 to 4) of std_logic_vector (7 downto 0);
+	signal musicToPlay : arrayOfChars 	:= (X"54", X"45", X"45", X"52", X"57", X"57", X"54", X"45"); --, X"15" );
+	signal correctSign : arrayOfChars7	:= (X"43", X"4F", X"52", X"52", X"45", X"43", X"54");
+	signal wrongSign : arrayOfChars5 	 	:= (X"57", X"52", X"4F", X"4E", X"47");
 	signal width : integer := 0;
 	signal height : integer := 0;
 	signal t_state : integer := 0;
@@ -68,19 +69,19 @@ begin
 								
 							when 3 => -- counter
 								Char_WE <= '1';
-
-								if(width = 23) then --23 max length
+								if(width = 16) then --23 max length
 									height <= height + 1;
 									NewLine <= '1';
+									width <= 0;
 									char_WE <= '0';
-								elsif(width < 9) then
+								elsif(width < 7) then
 									Char_DI <= correctSign(width);
 									width <= width + 1;
-								elsif(width < 12) then --print wynik
+								elsif(width < 9) then --print wynik
 									Char_DI <= "00000000";
 									width <= width + 1;
-								elsif(width < 20) then
-									Char_DI <= wrongSign(width - 12);
+								elsif(width < 14) then
+									Char_DI <= wrongSign(width - 9);
 									width <= width + 1;
 								else --print wynik
 									Char_DI <= "00000000";
@@ -116,33 +117,33 @@ begin
 							when 3 => -- counter
 								Char_WE <= '1';
 
-								if(width = 23) then --23 max length
+								if(width = 16) then --23 max length
 									height <= height + 1;
 									NewLine <= '1';
 									char_WE <= '0';
-								elsif(width < 9) then
+								elsif(width < 7) then
 									Char_DI <= correctSign(width);
 									width <= width + 1;
-								elsif(width < 12) then --print wynik
+								elsif(width < 9) then --print wynik
 									Char_DI <= "00000000";
 									width <= width + 1;
-								elsif(width < 20) then
-									Char_DI <= wrongSign(width - 12);
+								elsif(width < 14) then
+									Char_DI <= wrongSign(width - 9);
 									width <= width + 1;
 								else --print wynik
 									Char_DI <= "00000000";
 									width <= width + 1;
 								end if;
 									
-								
 							when 5 =>
-								if(width = (notesCorrect * 2)) then
-									height <= height + 1;
-								else
-									Char_DI <= musicToPlay(width);
-									width <= width + 1;
-									Char_WE <= '1';
-								end if;
+								--if(width = (notesCorrect * 2)) then
+									
+								--else
+								Char_DI <= Note;
+								width <= width + 1;
+								Char_WE <= '1';
+								height <= height + 1;
+								--end if;
 								
 							when others => 
 								Goto00 <= '1';

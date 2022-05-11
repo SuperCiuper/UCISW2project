@@ -10,7 +10,7 @@
 /*  \___\/\___\                                                    */
 /***********************************************************************/
 
-/* This file is designed for use with ISim build 0x7708f090 */
+/* This file is designed for use with ISim build 0xfbc00daa */
 
 #define XSI_HIDE_SYMBOL_SPEC true
 #include "xsi.h"
@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/VGAtxt48x20.vhd";
+static const char *ng0 = "/home/daria/Documents/GitHub/UCISW2project/UCISW2_organek/VGAtxt48x20.vhd";
 
 
 
@@ -36,12 +36,12 @@ static void work_a_1608263628_0632001823_p_0(char *t0)
     char *t7;
     char *t8;
 
-LAB0:    xsi_set_current_line(315, ng0);
+LAB0:    xsi_set_current_line(314, ng0);
 
 LAB3:    t1 = (t0 + 8712U);
     t2 = *((char **)t1);
     t3 = *((unsigned char *)t2);
-    t1 = (t0 + 51384);
+    t1 = (t0 + 51376);
     t4 = (t1 + 56U);
     t5 = *((char **)t4);
     t6 = (t5 + 56U);
@@ -49,7 +49,7 @@ LAB3:    t1 = (t0 + 8712U);
     *((unsigned char *)t7) = t3;
     xsi_driver_first_trans_fast_port(t1);
 
-LAB2:    t8 = (t0 + 51256);
+LAB2:    t8 = (t0 + 51248);
     *((int *)t8) = 1;
 
 LAB1:    return;
@@ -73,7 +73,7 @@ static void work_a_1608263628_0632001823_p_1(char *t0)
     char *t12;
     char *t13;
 
-LAB0:    xsi_set_current_line(316, ng0);
+LAB0:    xsi_set_current_line(315, ng0);
 
 LAB3:    t1 = (t0 + 45192U);
     t2 = *((char **)t1);
@@ -83,7 +83,7 @@ LAB3:    t1 = (t0 + 45192U);
     t6 = (0 + t5);
     t1 = (t2 + t6);
     t7 = *((unsigned char *)t1);
-    t8 = (t0 + 51448);
+    t8 = (t0 + 51440);
     t9 = (t8 + 56U);
     t10 = *((char **)t9);
     t11 = (t10 + 56U);
@@ -91,7 +91,7 @@ LAB3:    t1 = (t0 + 45192U);
     *((unsigned char *)t12) = t7;
     xsi_driver_first_trans_fast_port(t8);
 
-LAB2:    t13 = (t0 + 51272);
+LAB2:    t13 = (t0 + 51264);
     *((int *)t13) = 1;
 
 LAB1:    return;
@@ -110,12 +110,12 @@ static void work_a_1608263628_0632001823_p_2(char *t0)
     char *t7;
     char *t8;
 
-LAB0:    xsi_set_current_line(317, ng0);
+LAB0:    xsi_set_current_line(316, ng0);
 
 LAB3:    t1 = (t0 + 17992U);
     t2 = *((char **)t1);
     t3 = *((unsigned char *)t2);
-    t1 = (t0 + 51512);
+    t1 = (t0 + 51504);
     t4 = (t1 + 56U);
     t5 = *((char **)t4);
     t6 = (t5 + 56U);
@@ -123,7 +123,7 @@ LAB3:    t1 = (t0 + 17992U);
     *((unsigned char *)t7) = t3;
     xsi_driver_first_trans_fast_port(t1);
 
-LAB2:    t8 = (t0 + 51288);
+LAB2:    t8 = (t0 + 51280);
     *((int *)t8) = 1;
 
 LAB1:    return;
@@ -142,12 +142,12 @@ static void work_a_1608263628_0632001823_p_3(char *t0)
     char *t7;
     char *t8;
 
-LAB0:    xsi_set_current_line(318, ng0);
+LAB0:    xsi_set_current_line(317, ng0);
 
 LAB3:    t1 = (t0 + 36552U);
     t2 = *((char **)t1);
     t3 = *((unsigned char *)t2);
-    t1 = (t0 + 51576);
+    t1 = (t0 + 51568);
     t4 = (t1 + 56U);
     t5 = *((char **)t4);
     t6 = (t5 + 56U);
@@ -155,7 +155,7 @@ LAB3:    t1 = (t0 + 36552U);
     *((unsigned char *)t7) = t3;
     xsi_driver_first_trans_fast_port(t1);
 
-LAB2:    t8 = (t0 + 51304);
+LAB2:    t8 = (t0 + 51296);
     *((int *)t8) = 1;
 
 LAB1:    return;

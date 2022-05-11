@@ -1,0 +1,7 @@
+vhdl isim_temp "VGAtxt48x20.vhd"
+vhdl isim_temp "PS2ToNote.vhd"
+vhdl isim_temp "imageGenerator.vhd"
+vhdl isim_temp "frequencyGenerator.vhd"
+vhdl isim_temp "VGAscan.vhd"
+vhdl isim_temp "Main.vhf"
+vhdl isim_temp "MainTB.vhd"

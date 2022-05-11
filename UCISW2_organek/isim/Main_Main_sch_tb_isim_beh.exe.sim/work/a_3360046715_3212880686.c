@@ -10,7 +10,7 @@
 /*  \___\/\___\                                                    */
 /***********************************************************************/
 
-/* This file is designed for use with ISim build 0x7708f090 */
+/* This file is designed for use with ISim build 0xfbc00daa */
 
 #define XSI_HIDE_SYMBOL_SPEC true
 #include "xsi.h"
@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/Main.vhf";
+static const char *ng0 = "/home/daria/Documents/GitHub/UCISW2project/UCISW2_organek/Main.vhf";
 
 
 
@@ -41,7 +41,7 @@ LAB0:    xsi_set_current_line(163, ng0);
 LAB3:    t1 = (t0 + 7272U);
     t2 = *((char **)t1);
     t3 = *((unsigned char *)t2);
-    t1 = (t0 + 8992);
+    t1 = (t0 + 8984);
     t4 = (t1 + 56U);
     t5 = *((char **)t4);
     t6 = (t5 + 56U);
@@ -49,7 +49,7 @@ LAB3:    t1 = (t0 + 7272U);
     *((unsigned char *)t7) = t3;
     xsi_driver_first_trans_fast_port(t1);
 
-LAB2:    t8 = (t0 + 8912);
+LAB2:    t8 = (t0 + 8904);
     *((int *)t8) = 1;
 
 LAB1:    return;

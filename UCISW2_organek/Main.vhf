@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Main.vhf
--- /___/   /\     Timestamp : 05/05/2022 19:32:31
+-- /___/   /\     Timestamp : 05/11/2022 12:09:46
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/Main.vhf -w C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/Main.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl /home/daria/Documents/GitHub/UCISW2project/UCISW2_organek/Main.vhf -w /home/daria/Documents/GitHub/UCISW2project/UCISW2_organek/Main.sch
 --Design Name: Main
 --Device: spartan3e
 --Purpose:
