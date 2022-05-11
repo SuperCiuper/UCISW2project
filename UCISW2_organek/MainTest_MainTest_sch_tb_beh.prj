@@ -1,0 +1,7 @@
+vhdl work "VGAtxt48x20.vhd"
+vhdl work "PS2ToNote.vhd"
+vhdl work "imageGenerator.vhd"
+vhdl work "frequencyGenerator.vhd"
+vhdl work "VGAscan.vhd"
+vhdl work "MainTest.vhf"
+vhdl work "MainTestTB.vhd"

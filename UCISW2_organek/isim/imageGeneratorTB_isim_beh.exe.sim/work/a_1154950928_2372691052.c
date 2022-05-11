@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/home/daria/Documents/GitHub/UCISW2project/UCISW2_organek/imageGeneratorTB.vhd";
+static const char *ng0 = "/home/superciuper/Documents/UCISW2project/UCISW2_organek/imageGeneratorTB.vhd";
 
 
 
@@ -104,7 +104,7 @@ static void work_a_1154950928_2372691052_p_1(char *t0)
 
 LAB0:    xsi_set_current_line(102, ng0);
 
-LAB3:    t1 = (t0 + 7928);
+LAB3:    t1 = (t0 + 7904);
     t3 = (t0 + 4848);
     t4 = (t3 + 56U);
     t5 = *((char **)t4);
@@ -148,7 +148,7 @@ LAB3:    t1 = (t0 + 4912);
     t5 = *((char **)t4);
     *((unsigned char *)t5) = (unsigned char)2;
     xsi_driver_first_trans_delta(t1, 0U, 1, 0LL);
-    t6 = (340 * 1000LL);
+    t6 = (500 * 1000LL);
     t7 = (t0 + 4912);
     t8 = (t7 + 56U);
     t9 = *((char **)t8);
@@ -156,7 +156,7 @@ LAB3:    t1 = (t0 + 4912);
     t11 = *((char **)t10);
     *((unsigned char *)t11) = (unsigned char)3;
     xsi_driver_subsequent_trans_delta(t7, 0U, 1, t6);
-    t12 = (350 * 1000LL);
+    t12 = (510 * 1000LL);
     t13 = (t0 + 4912);
     t14 = (t13 + 56U);
     t15 = *((char **)t14);

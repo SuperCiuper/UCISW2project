@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/superciuper/Documents/UCISW2project/UCISW2_organek/imageGeneratorTB_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="imagegeneratortb" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/imagegeneratortb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/imagegeneratortb/note" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">note[7:0]</obj_property>
+      <obj_property name="ObjectShortName">note[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/imagegeneratortb/note_rdy" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">note_rdy</obj_property>
+      <obj_property name="ObjectShortName">note_rdy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/imagegeneratortb/char_di" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">char_di[7:0]</obj_property>
+      <obj_property name="ObjectShortName">char_di[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/imagegeneratortb/char_we" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">char_we</obj_property>
+      <obj_property name="ObjectShortName">char_we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/imagegeneratortb/home" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">home</obj_property>
+      <obj_property name="ObjectShortName">home</obj_property>
+   </wvobject>
+   <wvobject fp_name="/imagegeneratortb/newline" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">newline</obj_property>
+      <obj_property name="ObjectShortName">newline</obj_property>
+   </wvobject>
+   <wvobject fp_name="/imagegeneratortb/goto00" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">goto00</obj_property>
+      <obj_property name="ObjectShortName">goto00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/imagegeneratortb/cursoron" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cursoron</obj_property>
+      <obj_property name="ObjectShortName">cursoron</obj_property>
+   </wvobject>
+   <wvobject fp_name="/imagegeneratortb/scrollen" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">scrollen</obj_property>
+      <obj_property name="ObjectShortName">scrollen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/imagegeneratortb/scrollclear" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">scrollclear</obj_property>
+      <obj_property name="ObjectShortName">scrollclear</obj_property>
+   </wvobject>
+   <wvobject fp_name="/imagegeneratortb/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/imagegeneratortb/uut/xd" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">xd</obj_property>
+      <obj_property name="ObjectShortName">xd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/imagegeneratortb/uut/numdisplaydivider" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">numdisplaydivider</obj_property>
+      <obj_property name="ObjectShortName">numdisplaydivider</obj_property>
+   </wvobject>
+   <wvobject fp_name="/imagegeneratortb/uut/notescorrect" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">notescorrect</obj_property>
+      <obj_property name="ObjectShortName">notescorrect</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "/home/daria/Documents/GitHub/UCISW2project/UCISW2_organek/imageGeneratorTB_isim_beh.exe" -prj "/home/daria/Documents/GitHub/UCISW2project/UCISW2_organek/imageGeneratorTB_beh.prj" "work.imageGeneratorTB" 
+-intstyle "ise" -incremental -o "/home/superciuper/Documents/UCISW2project/UCISW2_organek/MainTest_MainTest_sch_tb_isim_beh.exe" -prj "/home/superciuper/Documents/UCISW2project/UCISW2_organek/MainTest_MainTest_sch_tb_beh.prj" "work.MainTest_MainTest_sch_tb" 
