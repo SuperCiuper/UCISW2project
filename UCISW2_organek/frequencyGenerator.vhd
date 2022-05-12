@@ -43,7 +43,7 @@ begin
 		
 	end process;
 
-	counterFrequency : process( Clk )
+	counterFrequency : process( Clk, Start )
 	begin
 	
 		if(rising_edge(Clk)) then

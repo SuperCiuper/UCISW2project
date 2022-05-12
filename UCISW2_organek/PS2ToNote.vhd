@@ -9,7 +9,7 @@ entity PS2ToNote is
            F0 : in  STD_LOGIC;
            Clk : in  STD_LOGIC;
            Note : out  STD_LOGIC_VECTOR (7 downto 0);
-			  Note_Rdy : out STD_LOGIC );
+			  Note_Rdy : out STD_LOGIC := '0' );
 end PS2ToNote;
 
 architecture Behavioral of PS2ToNote is

@@ -1,64 +1,15 @@
 ISim log file
-Running: /home/superciuper/Documents/UCISW2project/UCISW2_organek/MainTest_MainTest_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/superciuper/Documents/UCISW2project/UCISW2_organek/MainTest_MainTest_sch_tb_isim_beh.wdb 
-ISim P.20131013 (signature 0xfbc00daa)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
+Running: C:\Users\lab\Documents\GitHub\UCISW2project\UCISW2_organek\PS2ToNoteTB_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/PS2ToNoteTB_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-at 0 ps, Instance /maintest_maintest_sch_tb/I_Scanner/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 Finished circuit initialization process.
-# run 60ms
-at 13249590100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame0.bmp (/maintest_maintest_sch_tb/I_Scanner/).
-at 27102390100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame1.bmp (/maintest_maintest_sch_tb/I_Scanner/).
-at 40955190100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame2.bmp (/maintest_maintest_sch_tb/I_Scanner/).
-at 54807990100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame3.bmp (/maintest_maintest_sch_tb/I_Scanner/).
-ISim P.20131013 (signature 0xfbc00daa)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /maintest_maintest_sch_tb/I_Scanner/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-# run 60ms
-at 13249590100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame0.bmp (/maintest_maintest_sch_tb/I_Scanner/).
-ERROR: Index 13 out of bound 0 to 2. 
-ERROR: In process imageGenerator.vhd:displayProcess 
- 
-INFO: Simulator is stopped.
-ISim P.20131013 (signature 0xfbc00daa)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /maintest_maintest_sch_tb/I_Scanner/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-# run 60ms
-at 13249590100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame0.bmp (/maintest_maintest_sch_tb/I_Scanner/).
-ERROR: Index 20 out of bound 0 to 2. 
-ERROR: In process imageGenerator.vhd:displayProcess 
- 
-INFO: Simulator is stopped.
-ISim P.20131013 (signature 0xfbc00daa)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /maintest_maintest_sch_tb/I_Scanner/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-# run 60ms
-at 13249590100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame0.bmp (/maintest_maintest_sch_tb/I_Scanner/).
-at 27102390100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame1.bmp (/maintest_maintest_sch_tb/I_Scanner/).
-at 40955190100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame2.bmp (/maintest_maintest_sch_tb/I_Scanner/).
-at 54807990100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame3.bmp (/maintest_maintest_sch_tb/I_Scanner/).
-# exit 0

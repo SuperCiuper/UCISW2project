@@ -257,7 +257,7 @@ begin
 			
 		end process displayProcess;
 
-	CursorOn <= '0'; --for debug purposes
+	CursorOn <= '0';
 	ScrollEn <= '0';
 	Home <= '0';
 	ScrollClear <= '1';
