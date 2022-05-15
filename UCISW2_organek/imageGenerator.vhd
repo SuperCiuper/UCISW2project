@@ -232,7 +232,7 @@ begin
 								end if;
 									
 							when 5 =>
-								if(width = (notesCorrect * 2)) then
+								if(width = (notesCorrect * 2 - 1)) then
 									height <= height + 1;
 
 								else

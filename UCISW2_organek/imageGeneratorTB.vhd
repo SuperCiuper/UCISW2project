@@ -71,8 +71,13 @@ ARCHITECTURE behavior OF imageGeneratorTB IS
    signal ScrollEn : std_logic;
    signal ScrollClear : std_logic;
 
+	type arrayOfChars is array (0 to 9) of std_logic_vector (7 downto 0);
+	signal musicToPlay : arrayOfChars 	:= (X"54", X"45", X"45", X"45", X"52", X"57", X"57", X"52", X"54", X"45"); --, X"15" );
+	-- should be 1:0, 2:0, 3:0
+	signal q : integer := 0;
+	
    -- Clock period definitions
-   constant Clk_period : time := 10 ns;
+   constant Clk_period : time := 20 ns;
  
 BEGIN
  
@@ -90,16 +95,21 @@ BEGIN
           ScrollEn => ScrollEn,
           ScrollClear => ScrollClear
         );
-
-   Clk_process :process
-   begin
-		Clk <= '0';
-		wait for Clk_period/2;
-		Clk <= '1';
-		wait for Clk_period/2;
-   end process;
  
-	Note <= X"54";
-	Note_Rdy <= '0', '1' after 500ns, '0' after 510ns;
+	Clk <= not Clk after Clk_Period / 2;
+	
+	constantChanges : process
+	begin
+		while q < (musicToPlay'length + 2) loop
+			wait for 1500ns;
+			Note <= musicToPlay(q);
+			q <= q + 1;
+			Note_Rdy <= '1';
+			wait for 20ns;
+			Note_Rdy <= '0';
+			--Note <= X"00";
+			
+		end loop;
+	end process;
 
 END;

@@ -5,5 +5,8 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="443" delta="unknown" >"/home/superciuper/Documents/UCISW2project/UCISW2_organek/imageGenerator.vhd" Line 41: Function <arg fmt="%s" index="1">divide</arg> does not always return a value.
+</msg>
+
 </messages>
 

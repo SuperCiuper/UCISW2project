@@ -1,15 +1,58 @@
 ISim log file
-Running: C:\Users\lab\Documents\GitHub\UCISW2project\UCISW2_organek\PS2ToNoteTB_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/lab/Documents/GitHub/UCISW2project/UCISW2_organek/PS2ToNoteTB_isim_beh.wdb 
-ISim P.20131013 (signature 0x7708f090)
-----------------------------------------------------------------------
-WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
-
-
-----------------------------------------------------------------------
-This is a Full version of ISim.
+Running: /home/superciuper/Documents/UCISW2project/UCISW2_organek/MainComponent_MainComponent_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/superciuper/Documents/UCISW2project/UCISW2_organek/MainComponent_MainComponent_sch_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0xfbc00daa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
+at 0 ps, Instance /maincomponent_maincomponent_sch_tb/I_Scanner/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 Finished circuit initialization process.
+# run 240ms
+at 13249590100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame0.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).
+at 27102390100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame1.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).
+at 40955190100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame2.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).
+at 54807990100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame3.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).
+at 68660790100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame4.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).
+at 82513590100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame5.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).
+at 96366390100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame6.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).
+at 110219190100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame7.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).
+at 124071990100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame8.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).
+at 137924790100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame9.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).
+at 151777590100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame10.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).
+ERROR: Index 10 out of bound 0 to 9. 
+ERROR: In process MainComponentTB.vhd:constantChanges 
+ 
+INFO: Simulator is stopped.
+ISim P.20131013 (signature 0xfbc00daa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /maincomponent_maincomponent_sch_tb/I_Scanner/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+# run 240ms
+at 13249590100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame0.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).
+at 27102390100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame1.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).
+at 40955190100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame2.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).
+at 54807990100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame3.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).
+at 68660790100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame4.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).
+at 82513590100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame5.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).
+at 96366390100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame6.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).
+at 110219190100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame7.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).
+at 124071990100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame8.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).
+at 137924790100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame9.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).
+at 151777590100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame10.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).
+at 165630390100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame11.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).
+at 179483190100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame12.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).
+at 193335990100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame13.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).
+at 207188790100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame14.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).
+at 221041590100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame15.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).
+at 234894390100 ps(2): Note: A new frame saved in /home/superciuper/Documents/UCISW2project/Frame16.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).
+# exit 0

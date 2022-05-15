@@ -11,7 +11,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="15" />
+   <WVObjectSize size="14" />
    <wvobject fp_name="/imagegeneratortb/clk" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -27,6 +27,7 @@
    <wvobject fp_name="/imagegeneratortb/char_di" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">char_di[7:0]</obj_property>
       <obj_property name="ObjectShortName">char_di[7:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/imagegeneratortb/char_we" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">char_we</obj_property>
@@ -56,20 +57,16 @@
       <obj_property name="ElementShortName">scrollclear</obj_property>
       <obj_property name="ObjectShortName">scrollclear</obj_property>
    </wvobject>
+   <wvobject fp_name="/imagegeneratortb/musictoplay" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">musictoplay[0:9]</obj_property>
+      <obj_property name="ObjectShortName">musictoplay[0:9]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/imagegeneratortb/q" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">q</obj_property>
+      <obj_property name="ObjectShortName">q</obj_property>
+   </wvobject>
    <wvobject fp_name="/imagegeneratortb/clk_period" type="other" db_ref_id="1">
       <obj_property name="ElementShortName">clk_period</obj_property>
       <obj_property name="ObjectShortName">clk_period</obj_property>
-   </wvobject>
-   <wvobject fp_name="/imagegeneratortb/uut/xd" type="other" db_ref_id="1">
-      <obj_property name="ElementShortName">xd</obj_property>
-      <obj_property name="ObjectShortName">xd</obj_property>
-   </wvobject>
-   <wvobject fp_name="/imagegeneratortb/uut/numdisplaydivider" type="other" db_ref_id="1">
-      <obj_property name="ElementShortName">numdisplaydivider</obj_property>
-      <obj_property name="ObjectShortName">numdisplaydivider</obj_property>
-   </wvobject>
-   <wvobject fp_name="/imagegeneratortb/uut/notescorrect" type="other" db_ref_id="1">
-      <obj_property name="ElementShortName">notescorrect</obj_property>
-      <obj_property name="ObjectShortName">notescorrect</obj_property>
    </wvobject>
 </wave_config>

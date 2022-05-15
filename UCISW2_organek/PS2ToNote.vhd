@@ -43,9 +43,9 @@ begin
 						when X"43" => Note <= X"49"; -- I		 c
 						when others => Note <= X"00"; 
 					end case;
+					
 				elsif (E0 = '0' and F0 = '1') then
 					Note <= X"00";
-					Note_Rdy <= '0';
 				end if;
 			end if;
 		end if; 

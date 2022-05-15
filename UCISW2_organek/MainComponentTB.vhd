@@ -43,15 +43,20 @@ ARCHITECTURE behavioral OF MainComponent_MainComponent_sch_tb IS
    SIGNAL Addr	:	STD_LOGIC_VECTOR (3 DOWNTO 0);
    SIGNAL DATA	:	STD_LOGIC_VECTOR (11 DOWNTO 0);
    SIGNAL Clk	:	STD_LOGIC := '0';
-   SIGNAL DO_Rdy	:	STD_LOGIC;
-   SIGNAL DO	:	STD_LOGIC_VECTOR (7 DOWNTO 0);
-   SIGNAL F0	:	STD_LOGIC;
+   SIGNAL DO_Rdy	:	STD_LOGIC := '0';
+   SIGNAL DO	:	STD_LOGIC_VECTOR (7 DOWNTO 0) := "00000000";
+   SIGNAL F0	:	STD_LOGIC := '0';
    SIGNAL E0	:	STD_LOGIC;
    SIGNAL VGA_HS	:	STD_LOGIC;
    SIGNAL VGA_VS	:	STD_LOGIC;
    SIGNAL VGA_R	:	STD_LOGIC;
    SIGNAL VGA_G	:	STD_LOGIC;
    SIGNAL VGA_B	:	STD_LOGIC;
+
+	type arrayOfChars is array (0 to 9) of std_logic_vector (7 downto 0);
+	signal musicToPlay : arrayOfChars 	:= (X"2C", X"24", X"24", X"24", X"2D", X"1D", X"1D", X"2D", X"2C", X"24"); --, X"15" );
+	-- should be 1:0, 2:0, 3:0
+	signal q : integer := 0;
 
 	CONSTANT Clk_Period : DELAY_LENGTH := 20 ns;
    
@@ -99,7 +104,7 @@ BEGIN
    I_Scanner: VGAscan
       generic map(
          pxBorder => 3,
-         FileName => "C:\Users\lab\Documents\GitHub\UCISW2project\Frame" )    -- VGAtxt48x20 works in 800x600/72Hz mode => VGA generics can be left with their defaults
+         FileName => "/home/superciuper/Documents/UCISW2project/Frame" )    -- VGAtxt48x20 works in 800x600/72Hz mode => VGA generics can be left with their defaults
       port map(
          VS => VGA_VS,
          HS => VGA_HS,
@@ -111,9 +116,27 @@ BEGIN
    Clk <= not Clk after Clk_Period / 2;
 	
 	E0 <= '0';
-	F0 <= '0', '1' after 15000040ns, '0' after 15000060ns, '1' after 30000040ns, '0' after 30000060ns, '1' after 45000040ns, '0' after 45000060ns;
-	DO_Rdy <= '0', '1' after 15000000ns, '0' after 15000020ns, '1' after 15000040ns, '0' after 15000060ns, '1' after 30000000ns, '0' after 30000020ns, '1' after 45000000ns, '0' after 45000020ns, '1' after 45000040ns, '0' after 45000060ns;
-	DO <= "00000000", X"2C" after 15000000ns, X"24" after 30000000ns, X"2C" after 45000000ns;
+	--F0 <= '0', '1' after 15000040ns, '0' after 15000060ns, '1' after 30000040ns, '0' after 30000060ns, '1' after 45000040ns, '0' after 45000060ns;
+	--DO_Rdy <= '0', '1' after 15000000ns, '0' after 15000020ns, '1' after 15000040ns, '0' after 15000060ns, '1' after 30000000ns, '0' after 30000020ns, '1' after 45000000ns, '0' after 45000020ns, '1' after 45000040ns, '0' after 45000060ns;
+
+	constantChanges : process
+	begin
+		while q < (musicToPlay'length + 20) loop
+			wait for 15000000ns;
+			if q < musicToPlay'length then
+				DO <= musicToPlay(q);
+				q <= q + 1;
+				DO_Rdy <= '1';
+			end if;
+			wait for 20ns;
+			DO <= X"00";
+			F0 <= '1';
+			wait for 20ns;
+			DO_Rdy <= '0';
+			F0 <= '0';
+		end loop;
+	end process;
+	
 -- *** End Test Bench - User Defined Section ***
 
 END;
