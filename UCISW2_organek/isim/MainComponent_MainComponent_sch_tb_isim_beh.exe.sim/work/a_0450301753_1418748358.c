@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/home/superciuper/Documents/UCISW2project/UCISW2_organek/VGAscan.vhd";
+static const char *ng0 = "/home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/VGAscan.vhd";
 extern char *IEEE_P_1242562249;
 extern char *STD_STANDARD;
 

@@ -114,7 +114,7 @@ BEGIN
    I_Scanner: VGAscan
       generic map(
          pxBorder => 3,
-         FileName => "/home/superciuper/Documents/UCISW2project/Frame" )    -- VGAtxt48x20 works in 800x600/72Hz mode => VGA generics can be left with their defaults
+         FileName => "/home/daria/Documents/" )    -- VGAtxt48x20 works in 800x600/72Hz mode => VGA generics can be left with their defaults
       port map(
          VS => VGA_VS,
          HS => VGA_HS,

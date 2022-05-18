@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Main.vhf
--- /___/   /\     Timestamp : 05/13/2022 14:25:00
+-- /___/   /\     Timestamp : 05/17/2022 13:34:53
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl /home/superciuper/Documents/UCISW2project/UCISW2_organek/Main.vhf -w /home/superciuper/Documents/UCISW2project/UCISW2_organek/Main.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl /home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/Main.vhf -w /home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/Main.sch
 --Design Name: Main
 --Device: spartan3e
 --Purpose:
@@ -56,25 +56,6 @@ architecture BEHAVIORAL of MainComponent_MUSER_Main is
    signal XLXN_57 : std_logic;
    signal XLXN_67 : std_logic;
    signal XLXN_72 : std_logic;
-   component frequencyGenerator
-      port ( Clk   : in    std_logic; 
-             Note  : in    std_logic_vector (7 downto 0); 
-             Start : out   std_logic; 
-             Cmd   : out   std_logic_vector (3 downto 0); 
-             Addr  : out   std_logic_vector (3 downto 0); 
-             DATA  : out   std_logic_vector (11 downto 0));
-   end component;
-   
-   component PS2ToNote
-      port ( DO_Rdy   : in    std_logic; 
-             E0       : in    std_logic; 
-             F0       : in    std_logic; 
-             Clk      : in    std_logic; 
-             DO       : in    std_logic_vector (7 downto 0); 
-             Note_Rdy : out   std_logic; 
-             Note     : out   std_logic_vector (7 downto 0));
-   end component;
-   
    component VGAtxt48x20
       port ( Char_DI     : in    std_logic_vector (7 downto 0); 
              Home        : in    std_logic; 
@@ -112,24 +93,26 @@ architecture BEHAVIORAL of MainComponent_MUSER_Main is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
+   component PS2ToNote
+      port ( DO_Rdy   : in    std_logic; 
+             E0       : in    std_logic; 
+             F0       : in    std_logic; 
+             Note_Rdy : out   std_logic; 
+             Note     : out   std_logic_vector (7 downto 0); 
+             DO       : in    std_logic_vector (7 downto 0); 
+             Clk      : in    std_logic);
+   end component;
+   
+   component frequencyGenerator
+      port ( Start : out   std_logic; 
+             Cmd   : out   std_logic_vector (3 downto 0); 
+             Addr  : out   std_logic_vector (3 downto 0); 
+             DATA  : out   std_logic_vector (11 downto 0); 
+             Note  : in    std_logic_vector (7 downto 0); 
+             Clk   : in    std_logic);
+   end component;
+   
 begin
-   XLXI_2 : frequencyGenerator
-      port map (Clk=>Clk,
-                Note(7 downto 0)=>XLXN_47(7 downto 0),
-                Addr(3 downto 0)=>Addr(3 downto 0),
-                Cmd(3 downto 0)=>Cmd(3 downto 0),
-                DATA(11 downto 0)=>DATA(11 downto 0),
-                Start=>Start);
-   
-   XLXI_3 : PS2ToNote
-      port map (Clk=>Clk,
-                DO(7 downto 0)=>DO(7 downto 0),
-                DO_Rdy=>DO_Rdy,
-                E0=>E0,
-                F0=>F0,
-                Note(7 downto 0)=>XLXN_47(7 downto 0),
-                Note_Rdy=>XLXN_49);
-   
    XLXI_5 : VGAtxt48x20
       port map (Char_DI(7 downto 0)=>XLXN_52(7 downto 0),
                 Char_WE=>XLXN_51,
@@ -171,6 +154,23 @@ begin
       port map (I=>XLXN_72,
                 O=>VGA_R);
    
+   XLXI_11 : PS2ToNote
+      port map (Clk=>Clk,
+                DO(7 downto 0)=>DO(7 downto 0),
+                DO_Rdy=>DO_Rdy,
+                E0=>E0,
+                F0=>F0,
+                Note(7 downto 0)=>XLXN_47(7 downto 0),
+                Note_Rdy=>XLXN_49);
+   
+   XLXI_12 : frequencyGenerator
+      port map (Clk=>Clk,
+                Note(7 downto 0)=>XLXN_47(7 downto 0),
+                Addr(3 downto 0)=>Addr(3 downto 0),
+                Cmd(3 downto 0)=>Cmd(3 downto 0),
+                DATA(11 downto 0)=>DATA(11 downto 0),
+                Start=>Start);
+   
 end BEHAVIORAL;
 
 
@@ -208,10 +208,10 @@ architecture BEHAVIORAL of Main is
    signal XLXN_4                  : std_logic_vector (11 downto 0);
    signal XLXN_40                 : std_logic;
    signal XLXN_41                 : std_logic_vector (7 downto 0);
-   signal XLXN_42                 : std_logic;
-   signal XLXN_43                 : std_logic;
-   signal XLXN_44                 : std_logic;
    signal XLXN_81                 : std_logic;
+   signal XLXN_86                 : std_logic;
+   signal XLXN_87                 : std_logic;
+   signal XLXN_88                 : std_logic;
    signal SPI_MISO_DUMMY          : std_logic;
    signal XLXI_1_Reset_openSignal : std_logic;
    component DACWrite
@@ -247,12 +247,7 @@ architecture BEHAVIORAL of Main is
    end component;
    
    component MainComponent_MUSER_Main
-      port ( Clk    : in    std_logic; 
-             DO_Rdy : in    std_logic; 
-             DO     : in    std_logic_vector (7 downto 0); 
-             F0     : in    std_logic; 
-             E0     : in    std_logic; 
-             Start  : out   std_logic; 
+      port ( Start  : out   std_logic; 
              Cmd    : out   std_logic_vector (3 downto 0); 
              Addr   : out   std_logic_vector (3 downto 0); 
              DATA   : out   std_logic_vector (11 downto 0); 
@@ -260,7 +255,12 @@ architecture BEHAVIORAL of Main is
              VGA_VS : out   std_logic; 
              VGA_R  : out   std_logic; 
              VGA_G  : out   std_logic; 
-             VGA_B  : out   std_logic);
+             VGA_B  : out   std_logic; 
+             Clk    : in    std_logic; 
+             E0     : in    std_logic; 
+             DO_Rdy : in    std_logic; 
+             F0     : in    std_logic; 
+             DO     : in    std_logic_vector (7 downto 0));
    end component;
    
 begin
@@ -291,16 +291,16 @@ begin
                 PS2_Clk=>PS2_Clk,
                 PS2_Data=>PS2_Data,
                 DO(7 downto 0)=>XLXN_41(7 downto 0),
-                DO_Rdy=>XLXN_42,
-                E0=>XLXN_43,
-                F0=>XLXN_44);
+                DO_Rdy=>XLXN_88,
+                E0=>XLXN_86,
+                F0=>XLXN_87);
    
-   XLXI_12 : MainComponent_MUSER_Main
+   XLXI_4 : MainComponent_MUSER_Main
       port map (Clk=>Clk,
                 DO(7 downto 0)=>XLXN_41(7 downto 0),
-                DO_Rdy=>XLXN_42,
-                E0=>XLXN_43,
-                F0=>XLXN_44,
+                DO_Rdy=>XLXN_88,
+                E0=>XLXN_86,
+                F0=>XLXN_87,
                 Addr(3 downto 0)=>XLXN_3(3 downto 0),
                 Cmd(3 downto 0)=>XLXN_2(3 downto 0),
                 DATA(11 downto 0)=>XLXN_4(11 downto 0),

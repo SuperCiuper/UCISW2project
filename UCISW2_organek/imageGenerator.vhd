@@ -146,7 +146,7 @@ begin
 								
 							when 3 => -- counter
 								Char_WE <= '1';
-								
+								width <= width + 1;
 								if(width = correctSign'length + 3 + wrongSign'length + 3) then --23 max length
 									height <= height + 1;
 									NewLine <= '1';
@@ -154,16 +154,12 @@ begin
 									char_WE <= '0';
 								elsif(width < correctSign'length) then
 									Char_DI <= correctSign(width);
-									width <= width + 1;
 								elsif(width < correctSign'length + 3) then --print wynik
 									Char_DI <= X"2A";
-									width <= width + 1;
 								elsif(width < correctSign'length + 3 + wrongSign'length) then
 									Char_DI <= wrongSign(width - (correctSign'length + 3));
-									width <= width + 1;
 								else --print wynik
 									Char_DI <= X"2A";
-									width <= width + 1;
 								end if;
 								
 							when others => 
@@ -192,8 +188,9 @@ begin
 									Char_WE <= '1';
 								end if;
 								
-							when 3 => -- counter
+							when 3 => 
 								Char_WE <= '1';
+								width <= width + 1;
 								
 								if(width = correctSign'length + 3 + wrongSign'length + 3) then --23 max length
 									height <= height + 1;
@@ -202,33 +199,12 @@ begin
 									char_WE <= '0';
 								elsif(width < correctSign'length) then
 									Char_DI <= correctSign(width);
-									width <= width + 1;
 								elsif(width < correctSign'length + 3) then --print wynik
-									--if (width = correctSign'length) then
-									--	restOfNumber <= 0;
-									--	numberMultiplier <= 100;
-									--else
-									--	numberMultiplier <= numberMultiplier / 10;
-									--end if;
-									--XD <= divide(notesCorrect, numberMultiplier); --we have to do i the shitty way cuz VHDL
-									--Char_DI <= std_logic_vector(to_unsigned((48 + (notesCorrect / numberMultiplier - notesCorrect / (numberMultiplier * 10))), 8)); -- 48 is 0 in ASCII
-									--divident <= 0;
-									
-									--while (((divident * numberMultiplier) + restOfNumber) <= notesCorrect) loop
-									--	divident <= divident + 1;
-									--end loop;
-									--divident <= divident - 1;
-									--restOfNumber <= restOfNumber + divident;
-									--Char_DI <= std_logic_vector(to_unsigned((48 + divident), 8)); -- 48 is 0 in ASCII
-									
 									Char_DI <= std_logic_vector(to_unsigned(48 + (resultCorrect(width - correctSign'length)), 8)); -- 48 is 0 in ASCII
-									width <= width + 1;
 								elsif(width < correctSign'length + 3 + wrongSign'length) then
 									Char_DI <= wrongSign(width - (correctSign'length + 3));
-									width <= width + 1;
-								else --print wynik
-									Char_DI <= std_logic_vector(to_unsigned(48 + (resultWrong(width - (correctSign'length + 3 + wrongSign'length))), 8)); -- 48 is 0 in ASCII
-									width <= width + 1;
+								else 
+									Char_DI <= std_logic_vector(to_unsigned(48 + (resultWrong(width - (correctSign'length + 3 + wrongSign'length))), 8));
 								end if;
 									
 							when 5 =>

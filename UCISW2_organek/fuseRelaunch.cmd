@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "/home/superciuper/Documents/UCISW2project/UCISW2_organek/MainComponent_MainComponent_sch_tb_isim_beh.exe" -prj "/home/superciuper/Documents/UCISW2project/UCISW2_organek/MainComponent_MainComponent_sch_tb_beh.prj" "work.MainComponent_MainComponent_sch_tb" 
+-intstyle "ise" -incremental -o "/home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/Main_Main_sch_tb_isim_beh.exe" -prj "/home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/Main_Main_sch_tb_beh.prj" "work.Main_Main_sch_tb" 

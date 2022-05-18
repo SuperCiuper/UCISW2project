@@ -5,7 +5,19 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="443" delta="unknown" >"/home/superciuper/Documents/UCISW2project/UCISW2_organek/imageGenerator.vhd" Line 41: Function <arg fmt="%s" index="1">divide</arg> does not always return a value.
+<msg type="warning" file="HDLCompiler" num="443" delta="unknown" >"/home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/imageGenerator.vhd" Line 41: Function <arg fmt="%s" index="1">divide</arg> does not always return a value.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"/home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/Main.vhf" Line 268: &lt;<arg fmt="%s" index="1">dacwrite</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"/home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/Main.vhf" Line 288: &lt;<arg fmt="%s" index="1">ps2_kbd</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">/home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/Main.vhf</arg>&quot; Line <arg fmt="%d" index="2">268</arg>. Instance <arg fmt="%s" index="3">dacwrite</arg> is unbound
+</msg>
+
+<msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">/home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/Main.vhf</arg>&quot; Line <arg fmt="%d" index="2">288</arg>. Instance <arg fmt="%s" index="3">ps2_kbd</arg> is unbound
 </msg>
 
 </messages>

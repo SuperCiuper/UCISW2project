@@ -23,7 +23,7 @@
 #endif
 extern char *STD_STANDARD;
 static const char *ng1 = "Function divide ended without a return statement";
-static const char *ng2 = "/home/superciuper/Documents/UCISW2project/UCISW2_organek/imageGenerator.vhd";
+static const char *ng2 = "/home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/imageGenerator.vhd";
 extern char *IEEE_P_2592010699;
 extern char *IEEE_P_1242562249;
 
