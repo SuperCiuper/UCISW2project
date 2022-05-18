@@ -1,4 +1,4 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/Main_Main_sch_tb_isim_beh.exe -prj /home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/Main_Main_sch_tb_beh.prj work.Main_Main_sch_tb 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/MainComponent_MainComponent_sch_tb_isim_beh.exe -prj /home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/MainComponent_MainComponent_sch_tb_beh.prj work.MainComponent_MainComponent_sch_tb 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
@@ -8,18 +8,13 @@ Parsing VHDL file "/home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/PS2T
 Parsing VHDL file "/home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/imageGenerator.vhd" into library work
 WARNING:HDLCompiler:443 - "/home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/imageGenerator.vhd" Line 41: Function divide does not always return a value.
 Parsing VHDL file "/home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/frequencyGenerator.vhd" into library work
-Parsing VHDL file "/home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/MainComponent.vhf" into library work
 Parsing VHDL file "/home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/VGAscan.vhd" into library work
-Parsing VHDL file "/home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/Main.vhf" into library work
-Parsing VHDL file "/home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/MainTB.vhd" into library work
+Parsing VHDL file "/home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/MainComponent.vhf" into library work
+Parsing VHDL file "/home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/MainComponentTB.vhd" into library work
 Starting static elaboration
-WARNING:HDLCompiler:89 - "/home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/Main.vhf" Line 268: <dacwrite> remains a black-box since it has no binding entity.
-WARNING:HDLCompiler:89 - "/home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/Main.vhf" Line 288: <ps2_kbd> remains a black-box since it has no binding entity.
 Completed static elaboration
-Fuse Memory Usage: 128712 KB
+Fuse Memory Usage: 128408 KB
 Fuse CPU Usage: 1580 ms
-WARNING:Simulator:648 - "/home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/Main.vhf" Line 268. Instance dacwrite is unbound
-WARNING:Simulator:648 - "/home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/Main.vhf" Line 288. Instance ps2_kbd is unbound
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -50,7 +45,7 @@ Compiling architecture lut3_v of entity LUT3 [\LUT3("01101010")(0,7)\]
 Compiling architecture lut1_v of entity LUT1 [\LUT1("0010")(0,3)\]
 Compiling architecture inv_v of entity INV [inv_default]
 Compiling architecture ramb16_s9_v of entity RAMB16_S9 [\RAMB16_S9("000000000000","00000...]
-Compiling architecture ramb16_s9_s9_v of entity RAMB16_S9_S9 [\RAMB16_S9_S9:main_main_sch_tb:u...]
+Compiling architecture ramb16_s9_s9_v of entity RAMB16_S9_S9 [\RAMB16_S9_S9:maincomponent_main...]
 Compiling architecture lut2_l_v of entity LUT2_L [\LUT2_L("1101")(0,3)\]
 Compiling architecture lut4_l_v of entity LUT4_L [\LUT4_L("0100000000000000")(0,15...]
 Compiling architecture lut3_l_v of entity LUT3_L [\LUT3_L("11111101")(0,7)\]
@@ -59,18 +54,18 @@ Compiling architecture srl16_v of entity SRL16 [\SRL16("0000000000000000")(0,15)
 Compiling architecture muxf5_l_v of entity MUXF5_L [muxf5_l_default]
 Compiling architecture and3b1_v of entity AND3B1 [and3b1_default]
 Compiling architecture and3_v of entity AND3 [and3_default]
-Compiling architecture structure of entity VGAtxt48x20 [\VGAtxt48x20:main_main_sch_tb:uu...]
+Compiling architecture structure of entity VGAtxt48x20 [\VGAtxt48x20:maincomponent_mainc...]
 Compiling architecture behavioral of entity imageGenerator [imagegenerator_default]
 Compiling architecture buf_v of entity BUF [buf_default]
 Compiling architecture behavioral of entity PS2ToNote [ps2tonote_default]
 Compiling architecture behavioral of entity frequencyGenerator [frequencygenerator_default]
-Compiling architecture behavioral of entity MainComponent_MUSER_Main [\MainComponent_MUSER_Main:main_m...]
-Compiling architecture behavioral of entity Main [\Main:main_main_sch_tb:uut:\]
+Compiling architecture behavioral of entity MainComponent [\MainComponent:maincomponent_mai...]
 Compiling architecture simulational of entity VGAscan [\VGAscan("/home/daria/Documents/...]
-Compiling architecture behavioral of entity main_main_sch_tb
+Compiling architecture behavioral of entity maincomponent_maincomponent_sch_...
 Time Resolution for simulation is 1ps.
-Compiled 245 VHDL Units
-Built simulation executable /home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/Main_Main_sch_tb_isim_beh.exe
-Fuse Memory Usage: 718688 KB
-Fuse CPU Usage: 2140 ms
-GCC CPU Usage: 2850 ms
+Waiting for 3 sub-compilation(s) to finish...
+Compiled 243 VHDL Units
+Built simulation executable /home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/MainComponent_MainComponent_sch_tb_isim_beh.exe
+Fuse Memory Usage: 718520 KB
+Fuse CPU Usage: 2120 ms
+GCC CPU Usage: 2800 ms

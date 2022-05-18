@@ -1,5 +1,5 @@
 ISim log file
-Running: /home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/Main_Main_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/Main_Main_sch_tb_isim_beh.wdb 
+Running: /home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/MainComponent_MainComponent_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/daria/Documents/ucisw/UCISW2project/UCISW2_organek/MainComponent_MainComponent_sch_tb_isim_beh.wdb 
 ISim P.20131013 (signature 0xfbc00daa)
 ----------------------------------------------------------------------
 INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable is not set.
@@ -27,8 +27,9 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-at 0 ps, Instance /main_main_sch_tb/I_Scanner/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /maincomponent_maincomponent_sch_tb/I_Scanner/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 Finished circuit initialization process.
-# run 15ms
-at 13249590100 ps(2): Note: A new frame saved in /home/daria/Documents/0.bmp (/main_main_sch_tb/I_Scanner/).
-# exit 0
+# run 46ms
+at 13249590100 ps(2): Note: A new frame saved in /home/daria/Documents/0.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).
+at 27102390100 ps(2): Note: A new frame saved in /home/daria/Documents/1.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).
+at 40955190100 ps(2): Note: A new frame saved in /home/daria/Documents/2.bmp (/maincomponent_maincomponent_sch_tb/I_Scanner/).

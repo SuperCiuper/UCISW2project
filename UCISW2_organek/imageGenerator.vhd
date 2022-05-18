@@ -146,7 +146,8 @@ begin
 								
 							when 3 => -- counter
 								Char_WE <= '1';
-								width <= width + 1;
+								
+								
 								if(width = correctSign'length + 3 + wrongSign'length + 3) then --23 max length
 									height <= height + 1;
 									NewLine <= '1';
@@ -161,6 +162,7 @@ begin
 								else --print wynik
 									Char_DI <= X"2A";
 								end if;
+								width <= width + 1;
 								
 							when others => 
 								Goto00 <= '1';
@@ -190,7 +192,7 @@ begin
 								
 							when 3 => 
 								Char_WE <= '1';
-								width <= width + 1;
+								
 								
 								if(width = correctSign'length + 3 + wrongSign'length + 3) then --23 max length
 									height <= height + 1;
@@ -206,7 +208,8 @@ begin
 								else 
 									Char_DI <= std_logic_vector(to_unsigned(48 + (resultWrong(width - (correctSign'length + 3 + wrongSign'length))), 8));
 								end if;
-									
+								width <= width + 1;
+								
 							when 5 =>
 								if(width = (notesCorrect * 2 - 1)) then
 									height <= height + 1;
